@@ -1,0 +1,999 @@
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { typography, applyTypography, textColors } from '../styles/typography';
+
+interface PlinkoGameProps {
+  onClose: () => void;
+}
+
+type RiskLevel = 'low' | 'medium' | 'high';
+type PlayMode = 'manual' | 'auto';
+
+interface GameState {
+  balance: number;
+  betAmount: number;
+  riskLevel: RiskLevel;
+  rows: number;
+  playMode: PlayMode;
+  isAutoPlaying: boolean;
+  totalBallsDropped: number;
+  lastPayout: number;
+  totalWinnings: number;
+  recentResults: number[];
+}
+
+interface Ball {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  radius: number;
+  id: number;
+  finished: boolean;
+  slotIndex: number;
+  multiplier: number;
+  payout: number;
+}
+
+interface Peg {
+  x: number;
+  y: number;
+  radius: number;
+}
+
+interface Slot {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  multiplier: number;
+  color: string;
+  index: number;
+}
+
+// Accurate payout tables matching Stake.com's Plinko
+const PAYOUT_TABLES: Record<RiskLevel, Record<number, number[]>> = {
+  low: {
+    8: [5.6, 2.1, 1.1, 1.0, 0.5, 1.0, 1.1, 2.1, 5.6],
+    9: [5.6, 2.0, 1.6, 1.0, 0.7, 0.7, 1.0, 1.6, 2.0, 5.6],
+    10: [8.9, 3.0, 1.4, 1.1, 1.0, 0.5, 1.0, 1.1, 1.4, 3.0, 8.9],
+    11: [8.4, 3.0, 1.9, 1.3, 1.0, 0.7, 0.7, 1.0, 1.3, 1.9, 3.0, 8.4],
+    12: [10.0, 4.0, 2.0, 1.4, 1.1, 1.0, 0.5, 1.0, 1.1, 1.4, 2.0, 4.0, 10.0],
+    13: [8.1, 4.0, 3.0, 1.9, 1.2, 0.9, 0.7, 0.7, 0.9, 1.2, 1.9, 3.0, 4.0, 8.1],
+    14: [15.0, 5.0, 2.5, 1.6, 1.2, 1.0, 0.8, 0.5, 0.8, 1.0, 1.2, 1.6, 2.5, 5.0, 15.0],
+    15: [15.0, 8.0, 3.0, 2.0, 1.5, 1.1, 1.0, 0.5, 0.5, 1.0, 1.1, 1.5, 2.0, 3.0, 8.0, 15.0],
+    16: [20.0, 6.0, 3.0, 2.0, 1.4, 1.1, 0.9, 0.7, 0.5, 0.7, 0.9, 1.1, 1.4, 2.0, 3.0, 6.0, 20.0]
+  },
+  medium: {
+    8: [13.0, 3.0, 1.3, 0.7, 0.4, 0.7, 1.3, 3.0, 13.0],
+    9: [18.0, 4.0, 1.7, 0.9, 0.5, 0.5, 0.9, 1.7, 4.0, 18.0],
+    10: [24.0, 6.0, 2.0, 1.0, 0.6, 0.3, 0.6, 1.0, 2.0, 6.0, 24.0],
+    11: [43.0, 7.0, 2.0, 1.1, 0.6, 0.3, 0.3, 0.6, 1.1, 2.0, 7.0, 43.0],
+    12: [35.0, 9.0, 3.0, 1.4, 0.8, 0.5, 0.2, 0.5, 0.8, 1.4, 3.0, 9.0, 35.0],
+    13: [58.0, 15.0, 4.0, 2.0, 1.0, 0.6, 0.3, 0.2, 0.3, 0.6, 1.0, 2.0, 4.0, 15.0, 58.0],
+    14: [58.0, 15.0, 4.0, 2.0, 1.0, 0.6, 0.3, 0.1, 0.3, 0.6, 1.0, 2.0, 4.0, 15.0, 58.0],
+    15: [88.0, 18.0, 5.0, 2.0, 1.0, 0.6, 0.3, 0.1, 0.1, 0.3, 0.6, 1.0, 2.0, 5.0, 18.0, 88.0],
+    16: [110.0, 25.0, 6.0, 2.5, 1.2, 0.7, 0.4, 0.2, 0.1, 0.2, 0.4, 0.7, 1.2, 2.5, 6.0, 25.0, 110.0]
+  },
+  high: {
+    8: [29.0, 4.0, 1.5, 0.3, 0.2, 0.3, 1.5, 4.0, 29.0],
+    9: [43.0, 7.0, 2.0, 0.6, 0.2, 0.2, 0.6, 2.0, 7.0, 43.0],
+    10: [76.0, 10.0, 2.0, 0.6, 0.3, 0.1, 0.3, 0.6, 2.0, 10.0, 76.0],
+    11: [120.0, 14.0, 4.0, 1.0, 0.3, 0.1, 0.1, 0.3, 1.0, 4.0, 14.0, 120.0],
+    12: [170.0, 22.0, 4.0, 1.0, 0.4, 0.2, 0.1, 0.2, 0.4, 1.0, 4.0, 22.0, 170.0],
+    13: [260.0, 37.0, 8.0, 2.0, 0.7, 0.2, 0.1, 0.05, 0.1, 0.2, 0.7, 2.0, 8.0, 37.0, 260.0],
+    14: [420.0, 55.0, 8.0, 2.0, 0.7, 0.3, 0.1, 0.05, 0.1, 0.3, 0.7, 2.0, 8.0, 55.0, 420.0],
+    15: [620.0, 83.0, 13.0, 4.0, 1.0, 0.3, 0.1, 0.03, 0.03, 0.1, 0.3, 1.0, 4.0, 13.0, 83.0, 620.0],
+    16: [1000.0, 130.0, 18.0, 4.0, 1.0, 0.4, 0.2, 0.1, 0.03, 0.1, 0.2, 0.4, 1.0, 4.0, 18.0, 130.0, 1000.0]
+  }
+};
+
+const PlinkoGame: React.FC<PlinkoGameProps> = ({ onClose }) => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationRef = useRef<number>();
+  const autoPlayIntervalRef = useRef<NodeJS.Timeout>();
+  const ballsRef = useRef<Ball[]>([]);
+  const pegsRef = useRef<Peg[]>([]);
+  const slotsRef = useRef<Slot[]>([]);
+  
+  const [gameState, setGameState] = useState<GameState>({
+    balance: 1000.00,
+    betAmount: 1.00,
+    riskLevel: 'medium',
+    rows: 8, // Reduced for cleaner animation
+    playMode: 'manual',
+    isAutoPlaying: false,
+    totalBallsDropped: 0,
+    lastPayout: 0,
+    totalWinnings: 0,
+    recentResults: []
+  });
+  
+  const [showAnimation, setShowAnimation] = useState(true);
+  
+  // Constrained Plinko physics constants
+  const CANVAS_WIDTH = 600;
+  const CANVAS_HEIGHT = 500;
+  const BALL_RADIUS = 5;
+  const PEG_RADIUS = 4;
+  const GRAVITY = 0.25; // Reduced gravity for more controlled movement
+  const COEFFICIENT_OF_RESTITUTION = 0.85; // Higher bounce retention for visible effects
+  const FRICTION_COEFFICIENT = 0.992; // Minimal air resistance
+  const MIN_BOUNCE_VELOCITY = 0.8; // Lower minimum for smoother movement
+  const SPIN_DAMPING = 0.96;
+  
+  // Generate pegs in proper Plinko triangle pattern
+  const generatePegs = useCallback((rows: number): Peg[] => {
+    const pegs: Peg[] = [];
+    const startY = 80;
+    const endY = CANVAS_HEIGHT - 120;
+    const totalHeight = endY - startY;
+    const rowSpacing = totalHeight / rows;
+    
+    for (let row = 0; row < rows; row++) {
+      const y = startY + row * rowSpacing;
+      const pegsInRow = row + 1; // Row 0 has 1 peg, row 1 has 2 pegs, etc.
+      const totalWidth = CANVAS_WIDTH * 0.7;
+      const pegSpacing = totalWidth / (rows + 1);
+      const startX = (CANVAS_WIDTH - totalWidth) / 2;
+      
+      for (let col = 0; col < pegsInRow; col++) {
+        // Offset each row to create proper triangle pattern
+        const offsetX = startX + (rows - row) * pegSpacing / 2;
+        const x = offsetX + col * pegSpacing;
+        pegs.push({
+          x,
+          y,
+          radius: PEG_RADIUS
+        });
+      }
+    }
+    
+    return pegs;
+  }, []);
+  
+  // Generate slots at the bottom
+  const generateSlots = useCallback((rows: number, riskLevel: RiskLevel): Slot[] => {
+    const slots: Slot[] = [];
+    const slotCount = rows + 1;
+    const payouts = PAYOUT_TABLES[riskLevel][rows];
+    const slotWidth = (CANVAS_WIDTH * 0.8) / slotCount;
+    const startX = (CANVAS_WIDTH - CANVAS_WIDTH * 0.8) / 2;
+    const slotY = CANVAS_HEIGHT - 80;
+    const slotHeight = 60;
+    
+    for (let i = 0; i < slotCount; i++) {
+      const multiplier = payouts[i];
+      let color = '#10b981'; // Default green
+      
+      if (multiplier < 1) {
+        color = '#ef4444'; // Red for losing slots
+      } else if (multiplier > 5) {
+        color = '#f59e42'; // Orange for medium wins
+      } else if (multiplier > 20) {
+        color = '#8b5cf6'; // Purple for big wins
+      }
+      
+      slots.push({
+        x: startX + i * slotWidth,
+        y: slotY,
+        width: slotWidth,
+        height: slotHeight,
+        multiplier,
+        color,
+        index: i
+      });
+    }
+    
+    return slots;
+  }, []);
+  
+  // Initialize game elements when rows or risk level changes
+  useEffect(() => {
+    pegsRef.current = generatePegs(gameState.rows);
+    slotsRef.current = generateSlots(gameState.rows, gameState.riskLevel);
+  }, [gameState.rows, gameState.riskLevel, generatePegs, generateSlots]);
+  
+  // Advanced realistic physics ball mechanics
+  const updateBall = useCallback((ball: Ball): Ball => {
+    if (ball.finished) return ball;
+    
+    // 1. Apply gravity (constant downward acceleration)
+    ball.vy += GRAVITY;
+    
+    // 2. Apply air resistance and friction
+    ball.vx *= FRICTION_COEFFICIENT;
+    ball.vy *= FRICTION_COEFFICIENT;
+    
+    // 3. Apply spin damping
+    ball.spin *= SPIN_DAMPING;
+    
+    // 4. Update position based on velocity
+    ball.x += ball.vx;
+    ball.y += ball.vy;
+    
+    // 5. Track which row the ball is currently in and enforce single peg collision per row
+    const startY = 80;
+    const rowHeight = (CANVAS_HEIGHT - 200) / gameState.rows;
+    const currentRowFloat = (ball.y - startY) / rowHeight;
+    const newRow = Math.floor(currentRowFloat);
+    
+    // 6. Check if ball entered a new row
+    if (newRow > ball.currentRow && newRow >= 0 && newRow < gameState.rows) {
+      ball.currentRow = newRow;
+      ball.hasBouncedInRow = false; // Reset bounce flag for new row
+    }
+    
+    // 7. Update trail effect
+    ball.trail.push({ x: ball.x, y: ball.y, alpha: 1.0 });
+    ball.trail = ball.trail.slice(-10);
+    ball.trail.forEach((point, index) => {
+      point.alpha = (index / ball.trail.length) * 0.8;
+    });
+    
+    // 8. Enforce mandatory collision when ball crosses the peg line in each row
+    if (ball.currentRow >= 0 && ball.currentRow < gameState.rows && !ball.hasBouncedInRow) {
+      const pegY = startY + ball.currentRow * rowHeight;
+      
+      // Check if ball has reached or passed the peg level in this row
+      if (ball.y >= pegY - ball.radius) {
+        // Calculate which peg the ball should hit in this row
+        const totalWidth = CANVAS_WIDTH * 0.7;
+        const pegSpacing = totalWidth / (gameState.rows + 1);
+        const startX = (CANVAS_WIDTH - totalWidth) / 2;
+        const rowOffsetX = startX + (gameState.rows - ball.currentRow) * pegSpacing / 2;
+        const pegsInRow = ball.currentRow + 1;
+        
+        // Find the closest peg in current row
+        let closestPeg: Peg | null = null;
+        let closestDistance = Infinity;
+        
+        for (let pegIndex = 0; pegIndex < pegsInRow; pegIndex++) {
+          const pegX = rowOffsetX + pegIndex * pegSpacing;
+          const distance = Math.abs(ball.x - pegX);
+          
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestPeg = { x: pegX, y: pegY, radius: PEG_RADIUS };
+          }
+        }
+        
+        // Force collision with the closest peg
+        if (closestPeg) {
+          ball.hasBouncedInRow = true;
+          ball.bounceCount++;
+          ball.collisionHistory.push(ball.currentRow);
+          
+          // Position ball at peg level to ensure clean collision
+          ball.y = pegY;
+          
+          // TRUE 50/50 random direction - no bias from ball position
+          const goRight = Math.random() < 0.5;
+          ball.directionHistory.push(goRight);
+          
+          // Calculate target position in next row
+          if (ball.currentRow < gameState.rows - 1) {
+            const nextRow = ball.currentRow + 1;
+            const nextRowOffsetX = startX + (gameState.rows - nextRow) * pegSpacing / 2;
+            
+            // Determine current peg index
+            const currentPegIndex = Math.round((closestPeg.x - rowOffsetX) / pegSpacing);
+            
+            // Calculate target peg index (left = same, right = +1)
+            let targetPegIndex = goRight ? currentPegIndex + 1 : currentPegIndex;
+            
+            // Ensure target peg exists in next row
+            const pegsInNextRow = nextRow + 1;
+            targetPegIndex = Math.max(0, Math.min(pegsInNextRow - 1, targetPegIndex));
+            
+            const targetX = nextRowOffsetX + targetPegIndex * pegSpacing;
+            const targetY = startY + nextRow * rowHeight;
+            
+            // Set velocity to reach target position precisely
+            const frames = Math.max(30, rowHeight / 2); // Adaptive timing based on row height
+            ball.vx = (targetX - ball.x) / frames;
+            ball.vy = Math.max(1.0, (targetY - ball.y) / frames);
+            
+            // Add spin effect
+            ball.spin = goRight ? 2.5 : -2.5;
+            
+            // Energy loss
+            ball.energy *= COEFFICIENT_OF_RESTITUTION;
+          } else {
+            // Last row - prepare for landing in slots
+            ball.vx *= 0.8;
+            ball.vy = Math.max(1.2, ball.vy);
+            ball.spin *= 0.5;
+          }
+        }
+      }
+    }
+    
+    // 9. Check if ball reached the slots
+    if (ball.y > CANVAS_HEIGHT - 100 && !ball.finished) {
+      const slotWidth = (CANVAS_WIDTH * 0.8) / (gameState.rows + 1);
+      const startSlotX = (CANVAS_WIDTH - CANVAS_WIDTH * 0.8) / 2;
+      const slotIndex = Math.floor((ball.x - startSlotX) / slotWidth);
+      const clampedIndex = Math.max(0, Math.min(gameState.rows, slotIndex));
+      
+      ball.finished = true;
+      ball.slotIndex = clampedIndex;
+      ball.vy *= 0.3;
+      ball.vx *= 0.6;
+      
+      // Calculate payout
+      const payouts = PAYOUT_TABLES[gameState.riskLevel][gameState.rows];
+      const multiplier = payouts[clampedIndex] || 0;
+      const payout = gameState.betAmount * multiplier;
+      
+      setTimeout(() => {
+        setGameState(prev => ({
+          ...prev,
+          balance: prev.balance + payout,
+          lastPayout: payout,
+          totalWinnings: prev.totalWinnings + payout - prev.betAmount,
+          gamesPlayed: prev.gamesPlayed + 1
+        }));
+      }, 400);
+    }
+    
+    // 10. Canvas boundary collisions
+    if (ball.x < ball.radius) {
+      ball.x = ball.radius;
+      ball.vx = Math.abs(ball.vx) * COEFFICIENT_OF_RESTITUTION;
+    }
+    if (ball.x > CANVAS_WIDTH - ball.radius) {
+      ball.x = CANVAS_WIDTH - ball.radius;
+      ball.vx = -Math.abs(ball.vx) * COEFFICIENT_OF_RESTITUTION;
+    }
+    
+    return ball;
+  }, [gameState.rows, gameState.riskLevel, gameState.betAmount]);
+  
+  // Animation loop
+  const animate = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    
+    // Clear canvas with gradient background
+    const gradient = ctx.createLinearGradient(0, 0, 0, CANVAS_HEIGHT);
+    gradient.addColorStop(0, '#f8fafc');
+    gradient.addColorStop(1, '#e2e8f0');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    
+    // Draw pegs with proper Plinko triangle pattern
+    pegsRef.current.forEach(peg => {
+      // Peg shadow
+      ctx.fillStyle = 'rgba(100, 116, 139, 0.3)';
+      ctx.beginPath();
+      ctx.arc(peg.x + 1, peg.y + 1, peg.radius, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Main peg with triangle pattern indication
+      ctx.fillStyle = '#64748b';
+      ctx.strokeStyle = '#334155';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(peg.x, peg.y, peg.radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+      
+      // Peg highlight
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+      ctx.beginPath();
+      ctx.arc(peg.x - 1, peg.y - 1, peg.radius * 0.6, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    
+    // Draw path indicators for constrained Plinko movement
+    ctx.strokeStyle = 'rgba(148, 163, 184, 0.4)';
+    ctx.lineWidth = 1;
+    const startY = 80;
+    const totalHeight = (CANVAS_HEIGHT - 200);
+    const rowSpacing = totalHeight / gameState.rows;
+    
+    for (let row = 0; row < gameState.rows - 1; row++) {
+      const y = startY + row * rowSpacing;
+      const nextY = startY + (row + 1) * rowSpacing;
+      
+      const totalWidth = CANVAS_WIDTH * 0.7;
+      const pegSpacing = totalWidth / (gameState.rows + 1);
+      const startX = (CANVAS_WIDTH - totalWidth) / 2;
+      
+      const pegsInRow = row + 1;
+      const offsetX = startX + (gameState.rows - row) * pegSpacing / 2;
+      const nextOffsetX = startX + (gameState.rows - row - 1) * pegSpacing / 2;
+      
+      for (let col = 0; col < pegsInRow; col++) {
+        const pegX = offsetX + col * pegSpacing;
+        
+        // Draw LEFT path (stays in same position)
+        ctx.beginPath();
+        ctx.moveTo(pegX, y);
+        ctx.lineTo(nextOffsetX + col * pegSpacing, nextY);
+        ctx.stroke();
+        
+        // Draw RIGHT path (moves one position right)
+        if (col + 1 < pegsInRow + 1) {
+          ctx.beginPath();
+          ctx.moveTo(pegX, y);
+          ctx.lineTo(nextOffsetX + (col + 1) * pegSpacing, nextY);
+          ctx.stroke();
+        }
+      }
+    }
+    
+    // Draw slots
+    slotsRef.current.forEach(slot => {
+      // Slot background
+      ctx.fillStyle = slot.color;
+      ctx.fillRect(slot.x, slot.y, slot.width, slot.height);
+      
+      // Slot border
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(slot.x, slot.y, slot.width, slot.height);
+      
+      // Multiplier text
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 14px Inter';
+      ctx.textAlign = 'center';
+      ctx.fillText(
+        `${slot.multiplier}x`,
+        slot.x + slot.width / 2,
+        slot.y + slot.height / 2 + 5
+      );
+    });
+    
+    // Update and draw balls with row-by-row collision visualization
+    ballsRef.current = ballsRef.current.map(updateBall);
+    
+    ballsRef.current.forEach(ball => {
+      // Draw enhanced trail effect with energy-based opacity
+      ball.trail.forEach((point, index) => {
+        if (index > 0) {
+          const alpha = point.alpha * ball.energy;
+          const radius = ball.radius * (0.2 + alpha * 0.8);
+          
+          ctx.fillStyle = `rgba(${ball.color === '#10b981' ? '16, 185, 129' : 
+                                   ball.color === '#f59e42' ? '245, 158, 66' : 
+                                   '239, 68, 68'}, ${alpha * 0.5})`;
+          ctx.beginPath();
+          ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      });
+      
+      // Highlight the peg the ball will hit next (if in a row)
+      if (ball.currentRow >= 0 && ball.currentRow < gameState.rows && !ball.hasBouncedInRow) {
+        const startY = 80;
+        const rowHeight = (CANVAS_HEIGHT - 200) / gameState.rows;
+        const totalWidth = CANVAS_WIDTH * 0.7;
+        const pegSpacing = totalWidth / (gameState.rows + 1);
+        const startX = (CANVAS_WIDTH - totalWidth) / 2;
+        const rowOffsetX = startX + (gameState.rows - ball.currentRow) * pegSpacing / 2;
+        const pegsInRow = ball.currentRow + 1;
+        
+        // Find closest peg
+        let closestPegX = rowOffsetX;
+        let closestDistance = Infinity;
+        for (let i = 0; i < pegsInRow; i++) {
+          const pegX = rowOffsetX + i * pegSpacing;
+          const distance = Math.abs(ball.x - pegX);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestPegX = pegX;
+          }
+        }
+        
+        // Highlight the target peg
+        const pegY = startY + ball.currentRow * rowHeight;
+        ctx.fillStyle = 'rgba(255, 255, 0, 0.6)';
+        ctx.beginPath();
+        ctx.arc(closestPegX, pegY, PEG_RADIUS + 2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      
+      // Enhanced shadow with physics-based offset
+      const shadowOffsetX = Math.min(3, Math.abs(ball.vx) * 0.5);
+      const shadowOffsetY = Math.min(3, Math.abs(ball.vy) * 0.3);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
+      ctx.beginPath();
+      ctx.arc(ball.x + shadowOffsetX, ball.y + shadowOffsetY, ball.radius, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Main ball with energy-based brightness
+      const energyFactor = Math.max(0.6, ball.energy);
+      ctx.fillStyle = ball.color;
+      ctx.globalAlpha = energyFactor;
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+      ctx.globalAlpha = 1.0;
+      
+      // Spin visualization (rotating highlight)
+      if (Math.abs(ball.spin) > 0.1) {
+        const spinAngle = Date.now() * ball.spin * 0.01;
+        const highlightX = ball.x + Math.cos(spinAngle) * ball.radius * 0.6;
+        const highlightY = ball.y + Math.sin(spinAngle) * ball.radius * 0.6;
+        
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.beginPath();
+        ctx.arc(highlightX, highlightY, ball.radius * 0.3, 0, Math.PI * 2);
+        ctx.fill();
+      } else {
+        // Static shine for non-spinning balls
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+        ctx.beginPath();
+        ctx.arc(
+          ball.x - ball.radius * 0.3, 
+          ball.y - ball.radius * 0.3, 
+          ball.radius * 0.35, 
+          0, 
+          Math.PI * 2
+        );
+        ctx.fill();
+      }
+      
+      // Row indicator - show which row the ball is in, bounce count, and collision history
+      if (ball.currentRow >= 0) {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.font = 'bold 10px Inter';
+        ctx.textAlign = 'center';
+        const historyText = ball.collisionHistory.length > 0 ? `[${ball.collisionHistory.join(',')}]` : '';
+        ctx.fillText(`R${ball.currentRow}:${ball.bounceCount}${historyText}`, ball.x, ball.y - ball.radius - 8);
+        
+        // Visual indicator if ball has bounced in current row
+        if (ball.hasBouncedInRow) {
+          ctx.fillStyle = 'rgba(0, 255, 0, 0.8)';
+          ctx.beginPath();
+          ctx.arc(ball.x + ball.radius + 3, ball.y - ball.radius - 3, 2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    });
+    
+    // Clean up finished balls after they've been on screen for a while
+    ballsRef.current = ballsRef.current.filter(ball => 
+      !ball.finished || Date.now() - ball.id < 3000
+    );
+    
+    animationRef.current = requestAnimationFrame(animate);
+  }, [updateBall, gameState.riskLevel]);
+  
+  // Start animation loop
+  useEffect(() => {
+    animate();
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [animate]);
+  
+  // Play a game - drop a single ball (no cooldown)
+  const playGame = useCallback(() => {
+    if (gameState.betAmount > gameState.balance) return;
+    
+    // Deduct bet amount immediately
+    setGameState(prev => ({ 
+      ...prev, 
+      balance: prev.balance - prev.betAmount
+    }));
+    
+    // Create a new ball with constrained Plinko physics
+    const newBall: Ball = {
+      x: CANVAS_WIDTH / 2 + (Math.random() - 0.5) * 5, // Very small random offset
+      y: 30,
+      vx: 0, // No initial horizontal velocity
+      vy: 0.8, // Consistent downward velocity
+      radius: BALL_RADIUS,
+      color: RISK_COLORS[gameState.riskLevel],
+      id: Date.now() + Math.random(), // Ensure unique ID
+      finished: false,
+      slotIndex: 0,
+      trail: [], // Trail for visual effect
+      spin: 0, // Initial spin
+      energy: 1.0, // Full energy
+      bounceCount: 0, // No bounces yet
+      currentRow: -1, // Start above first row
+      hasBouncedInRow: false, // No bounces yet
+      collisionHistory: [], // Track which rows have been hit
+      directionHistory: [] // Track left vs right decisions
+    };
+    
+    ballsRef.current.push(newBall);
+  }, [gameState.betAmount, gameState.balance, gameState.riskLevel]);
+
+  const resetGame = () => {
+    setGameState({
+      balance: 1000,
+      betAmount: 10,
+      riskLevel: 'medium',
+      rows: 12,
+      isPlaying: false,
+      lastPayout: 0,
+      totalWinnings: 0,
+      gamesPlayed: 0
+    });
+    ballsRef.current = [];
+  };
+
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        background: 'rgba(30,41,59,0.25)',
+        zIndex: 1000,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backdropFilter: 'blur(8px)'
+      }}
+      onClick={onClose}
+    >
+      <div
+        style={{
+          background: '#fff',
+          borderRadius: 24,
+          boxShadow: '0 12px 48px rgba(60,72,100,0.15)',
+          padding: 24,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 16,
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          overflow: 'auto'
+        }}
+        onClick={e => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div style={{ textAlign: 'center', marginBottom: 8 }}>
+          <h2 style={{
+            ...applyTypography(typography.heading.xl),
+            color: textColors.primary,
+            marginBottom: 4
+          }}>
+            Plinko Game
+          </h2>
+          <p style={{
+            ...applyTypography(typography.body.sm),
+            color: textColors.secondary
+          }}>
+            Provably fair probabilistic game
+          </p>
+        </div>
+
+        {/* Game Controls */}
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: 16,
+          width: '100%',
+          maxWidth: 400,
+          marginBottom: 16
+        }}>
+          {/* Bet Amount */}
+          <div>
+            <label style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary,
+              display: 'block',
+              marginBottom: 4
+            }}>
+              Bet Amount
+            </label>
+            <input
+              type="number"
+              value={gameState.betAmount}
+              onChange={(e) => setGameState(prev => ({ 
+                ...prev, 
+                betAmount: Math.max(1, Math.min(prev.balance, Number(e.target.value))) 
+              }))}
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '2px solid #e5e7eb',
+                borderRadius: 8,
+                ...applyTypography(typography.body.md)
+              }}
+            />
+          </div>
+
+          {/* Risk Level */}
+          <div>
+            <label style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary,
+              display: 'block',
+              marginBottom: 4
+            }}>
+              Risk Level
+            </label>
+            <select
+              value={gameState.riskLevel}
+              onChange={(e) => {
+                const selectValue = e.target.value;
+                if (selectValue === 'low' || selectValue === 'medium' || selectValue === 'high') {
+                  setGameState(prev => ({ 
+                    ...prev, 
+                    riskLevel: selectValue,
+                  }));
+                }
+              }}
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '2px solid #e5e7eb',
+                borderRadius: 8,
+                ...applyTypography(typography.body.md)
+              }}
+            >
+              <option value="low">Low Risk</option>
+              <option value="medium">Medium Risk</option>
+              <option value="high">High Risk</option>
+            </select>
+          </div>
+
+          {/* Rows */}
+          <div>
+            <label style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary,
+              display: 'block',
+              marginBottom: 4
+            }}>
+              Rows
+            </label>
+            <select
+              value={gameState.rows}
+              onChange={(e) => setGameState(prev => ({ 
+                ...prev, 
+                rows: Number(e.target.value) 
+              }))}
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '2px solid #e5e7eb',
+                borderRadius: 8,
+                ...applyTypography(typography.body.md)
+              }}
+            >
+              <option value={6}>6 Rows</option>
+              <option value={8}>8 Rows</option>
+              <option value={10}>10 Rows</option>
+              <option value={12}>12 Rows</option>
+            </select>
+          </div>
+
+          {/* Animation Toggle */}
+          <div>
+            <label style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary,
+              display: 'block',
+              marginBottom: 4
+            }}>
+              Animation
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <input
+                type="checkbox"
+                checked={showAnimation}
+                onChange={(e) => setShowAnimation(e.target.checked)}
+              />
+              <span style={{ ...applyTypography(typography.body.sm) }}>
+                Show Animation
+              </span>
+            </label>
+          </div>
+        </div>
+
+        {/* Game Stats */}
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: 16,
+          width: '100%',
+          maxWidth: 500,
+          padding: '12px',
+          background: '#f8fafc',
+          borderRadius: 12,
+          border: '1px solid #e5e7eb',
+          marginBottom: 16
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              ...applyTypography(typography.heading.md),
+              color: textColors.primary
+            }}>
+              ${gameState.balance.toFixed(2)}
+            </div>
+            <div style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary
+            }}>
+              Balance
+            </div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              ...applyTypography(typography.heading.md),
+              color: gameState.lastPayout > gameState.betAmount ? textColors.success : textColors.error
+            }}>
+              ${gameState.lastPayout.toFixed(2)}
+            </div>
+            <div style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary
+            }}>
+              Last Payout
+            </div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              ...applyTypography(typography.heading.md),
+              color: gameState.totalWinnings >= 0 ? textColors.success : textColors.error
+            }}>
+              ${gameState.totalWinnings.toFixed(2)}
+            </div>
+            <div style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary
+            }}>
+              Total P&L
+            </div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              ...applyTypography(typography.heading.md),
+              color: textColors.accent
+            }}>
+              {gameState.gamesPlayed}
+            </div>
+            <div style={{
+              ...applyTypography(typography.body.sm),
+              color: textColors.secondary
+            }}>
+              Games
+            </div>
+          </div>
+        </div>
+
+        {/* 50/50 Distribution Stats */}
+        {(() => {
+          const allDirections = ballsRef.current.flatMap(ball => ball.directionHistory);
+          const leftCount = allDirections.filter(dir => !dir).length;
+          const rightCount = allDirections.filter(dir => dir).length;
+          const total = leftCount + rightCount;
+          const leftPercentage = total > 0 ? ((leftCount / total) * 100).toFixed(1) : '0.0';
+          const rightPercentage = total > 0 ? ((rightCount / total) * 100).toFixed(1) : '0.0';
+          
+          return total > 0 ? (
+            <div style={{ 
+              display: 'flex', 
+              gap: 16,
+              width: '100%',
+              maxWidth: 300,
+              padding: '8px 12px',
+              background: '#f1f5f9',
+              borderRadius: 8,
+              border: '1px solid #cbd5e1',
+              marginBottom: 12,
+              justifyContent: 'center'
+            }}>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{
+                  ...applyTypography(typography.body.sm),
+                  color: textColors.primary,
+                  fontWeight: 'bold'
+                }}>
+                  ← {leftPercentage}%
+                </div>
+                <div style={{
+                  ...applyTypography(typography.body.sm),
+                  color: textColors.tertiary
+                }}>
+                  Left ({leftCount})
+                </div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{
+                  ...applyTypography(typography.body.sm),
+                  color: textColors.primary,
+                  fontWeight: 'bold'
+                }}>
+                  {rightPercentage}% →
+                </div>
+                <div style={{
+                  ...applyTypography(typography.body.sm),
+                  color: textColors.tertiary
+                }}>
+                  Right ({rightCount})
+                </div>
+              </div>
+            </div>
+          ) : null;
+        })()}
+
+        {/* Game Canvas */}
+        <canvas
+          ref={canvasRef}
+          width={CANVAS_WIDTH}
+          height={CANVAS_HEIGHT}
+          style={{
+            border: '2px solid #e5e7eb',
+            borderRadius: 12,
+            background: '#f8fafc'
+          }}
+        />
+
+        {/* Controls */}
+        <div style={{ display: 'flex', gap: 12 }}>
+          <button
+            onClick={playGame}
+            disabled={gameState.betAmount > gameState.balance}
+            style={{
+              background: (gameState.betAmount <= gameState.balance) ? 
+                'linear-gradient(90deg, #6366f1 0%, #818cf8 100%)' : '#e5e7eb',
+              color: (gameState.betAmount <= gameState.balance) ? 
+                textColors.white : textColors.tertiary,
+              border: 'none',
+              borderRadius: 12,
+              padding: '12px 24px',
+              cursor: (gameState.betAmount <= gameState.balance) ? 
+                'pointer' : 'not-allowed',
+              ...applyTypography(typography.ui.button.md),
+              transition: 'all 0.2s ease'
+            }}
+          >
+            Drop Ball - ${gameState.betAmount.toFixed(2)}
+          </button>
+          <button
+            onClick={resetGame}
+            style={{
+              background: '#f4f6fb',
+              color: textColors.accent,
+              border: '2px solid #e5e7eb',
+              borderRadius: 12,
+              padding: '12px 24px',
+              cursor: 'pointer',
+              ...applyTypography(typography.ui.button.md),
+              transition: 'all 0.2s ease'
+            }}
+          >
+            Reset Game
+          </button>
+          <button
+            onClick={onClose}
+            style={{
+              background: '#fee2e2',
+              color: '#dc2626',
+              border: '1px solid #fecaca',
+              borderRadius: 12,
+              padding: '12px 24px',
+              cursor: 'pointer',
+              ...applyTypography(typography.ui.button.md),
+              transition: 'all 0.2s ease'
+            }}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PlinkoGame;

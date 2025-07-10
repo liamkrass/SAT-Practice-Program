@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "extract-questions": "npx ts-node src/scripts/extractQuestions.ts",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  }
+}
