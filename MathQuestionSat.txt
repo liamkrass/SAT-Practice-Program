@@ -1,0 +1,553 @@
+QUESTION_1
+Question: What system of linear equations is represented by the lines shown? Visual: A line graph on an xy-plane with a grid. The x-axis ranges from -2 to 10. The y-axis ranges from -2 to 10. There are two lines graphed. The first line passes through the points (0, 8) and (8, 0). The second line passes through the points (0, 4) and (8, 0). A) 8x+4y=32,−10x−4y=−64 B) 8x−4y=32,−10x+4y=−64 C) 4x−10y=32,−8x+10y=−64 D) 4x+10y=32,−8x−10y=−64 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_2
+Question: 3x=36y−45. One of the two equations in a system of linear equations is given. The system has no solution. Which equation could be the second equation in this system? Visual: None A) x=4y B) 31 x=4y C) x=12y−15 D) 31 x=12y−15 Answer: B Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_3
+Question: The graph of the equation ax+ky=6 is a line in the xy-plane, where a and k are constants. If the line contains the points (−2,−6) and (0,−3), what is the value of k? Visual: None A) -2 B) -1 C) 2 D) 3 Answer: A Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_4
+Question: A window repair specialist charges $220 for the first two hours of repair plus an hourly fee for each additional hour. The total cost for 5 hours of repair is $400. Which function f gives the total cost, in dollars, for hours of repair, where x≥2? Visual: None A) f(x)=60x+100 B) f(x)=60x+220 C) f(x)=80x D) f(x)=80x+220 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_5
+Question: For line h, the table shows three values of x and their corresponding values of y. Line k is the result of translating line h down 5 units in the xy-plane. What is the x-intercept of line k? Visual: A table with two columns, x and y. The rows contain the following pairs of values: (18, 130), (23, 160), (26, 178). A) (−326 ,0) B) (−29 ,0) C) (−311 ,0) D) (−617 ,0) Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_6
+Question: A certain apprentice has enrolled in 85 hours of training courses. The equation 10x+15y=85 represents this situation, where x is the number of on-site training courses and y is the number of online training courses this apprentice has enrolled in. How many more hours does each online training course take than each on-site training course? Visual: None A) 5 B) 10 C) 15 D) 25 Answer: A Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_7
+Question: The cost of renting a backhoe for up to 10 days is $270 for the first day and $135 for each additional day. Which of the following equations gives the cost y, in dollars, of renting the backhoe for x days, where x is a positive integer and x≤10? Visual: None A) y=270x−135 B) y=270x+135 C) y=135x+270 D) y=135x+135 Answer: D Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_8
+Question: Adam's school is a 20-minute walk or a 5-minute bus ride away from his house. The bus runs once every 30 minutes, and the number of minutes, w, that Adam waits for the bus varies between 0 and 30. Which of the following inequalities gives the values of w for which it would be faster for Adam to walk to school? Visual: None A) w−5<20 B) w−5>20 C) w+5<20 D) w+5>20 Answer: D Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_9
+Question: 7x+6y=5,28x+24y=20. For each real number r, which of the following points lies on the graph of each equation in the xy-plane for the given system? Visual: None A) (r,−76r +75 ) B) (r,67r +65 ) C) (4r +5,−4r +20) D) (−76r +75 ,r) Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_10
+Question: In August, a car dealer completed 15 more than 3 times the number of sales the car dealer completed in September. In August and September, the car dealer completed 363 sales. How many sales did the car dealer complete in September? Visual: None A) 87 B) 96 C) 102 D) 121 Answer: A Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_11
+Question: A factory makes 9-inch, 7-inch, and 4-inch concrete screws. During a certain day, the number of 9-inch concrete screws that the factory makes is 5 times the number n of 7-inch concrete screws, and the number of 4-inch concrete screws is 22. During this day, the factory makes 100 concrete screws total. Which equation represents this situation? Visual: None A) 9(5n)+7n+4(22)=100 B) 9n+7n+4n=100 C) 5n+22=100 D) 6n+22=100 Answer: D Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_12
+Question: A laundry service is buying detergent and fabric softener from its supplier. The supplier will deliver no more than 300 pounds in a shipment. Each container of detergent weighs 7.35 pounds, and each container of fabric softener weighs 6.2 pounds. The service wants to buy at least twice as many containers of detergent as containers of fabric softener. Let d represent the number of containers of detergent, and let s represent the number of containers of fabric softener, where d and s are nonnegative integers. Which of the following systems of inequalities best represents this situation? Visual: None A) 7.35d+6.2s≤300,d≥2s B) 7.35d+6.2s≤300,2d≥s C) 14.7d+6.2s≤300,d≥2s D) 14.7d+6.2s≤300,2d≥s Answer: A Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_13
+Question: How many solutions does the equation 10(15x−9)=−15(6−10x) have? Visual: None A) Exactly one B) Exactly two C) Infinitely many D) Zero Answer: C Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_14
+Question: y≤x+7,y≥−2x−1. Which point (x, y) is a solution to the given system of inequalities in the xy-plane? Visual: None A) (-14,0) B) (0,-14) C) (0,14) D) (14,0) Answer: D Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_15
+Question: 53 x+43 y=7. Which table gives three values of x and their corresponding values of y for the given equation? Visual: Four tables are provided as options. Each table has two columns, x and y, and three rows of values. Table A: (1, 113/20), (2, 101/20), (4, 77/20) Table B: (1, 47/5), (2, 44/5), (4, 38/5) Table C: (1, 148/15), (2, 136/15), (4, 112/15) Table D: (1, 128/15), (2, 116/15), (4, 92/15) A) Table A B) Table B C) Table C D) Table D Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_16
+Question: 3(kx+13)=1748 x+36. In the given equation, k is a constant. The equation has no solution. What is the value of k? Visual: None A) 16/17 B) 1 C) 3 D) 12 Answer: A Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_17
+Question: For the linear function f, the table shows three values of x and their corresponding values of f(x). If h(x)=f(x)−13, which equation defines h? Visual: A table with two columns, x and f(x). The rows contain the following pairs of values: (-4, 0), (-19/5, 1), (-18/5, 2). A) h(x)=5x−4 B) h(x)=5x+7 C) h(x)=5x+9 D) h(x)=5x+20 Answer: B Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_18
+Question: The functions f and g are defined as f(x)=41 x−9 and g(x)=43 x+21. If the function h is defined as h(x)=f(x)+g(x), what is the x-coordinate of the x-intercept of the graph of y=h(x) in the xy-plane? Visual: None A) -12 B) -9 C) 9 D) 12 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_19
+Question: A number x is at most 2 less than 3 times the value of y. If the value of y is -4, what is the greatest possible value of x? Visual: None A) -14 B) -10 C) -6 D) -2 Answer: A Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_20
+Question: −x+y=−3.5,x+3y=9.5. If (x, y) satisfies the system of equations above, what is the value of y? Visual: None A) 1.5 B) 3 C) 3.25 D) 6.5 Answer: A Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_21
+Question: Hector used a tool called an auger to remove corn from a storage bin at a constant rate. The bin contained 24,000 bushels of corn when Hector began to use the auger. After 5 hours of using the auger, 19,350 bushels of corn remained in the bin. If the auger continues to remove corn at this rate, what is the total number of hours Hector will have been using the auger when 12,840 bushels of corn remain in the bin? Visual: None A) 3 B) 7 C) 8 D) 12 Answer: D Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_22
+Question: 23 y−41 x=32 −23 y,21 x+23 =py+29 . In the given system of equations, p is a constant. If the system has no solution, what is the value of p? Visual: None A) -6 B) -3 C) 3 D) 6 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_23
+Question: An economist modeled the demand Q for a certain product as a linear function of the selling price P. The demand was 20,000 units when the selling price was $40 per unit, and the demand was 15,000 units when the selling price was $60 per unit. Based on the model, what is the demand, in units, when the selling price is $55 per unit? Visual: None A) 16,250 B) 16,500 C) 16,750 D) 17,500 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_24
+Question: Line p is defined by 4y+8x=6. Line r is perpendicular to line p in the xy-plane. What is the slope of line r? Visual: None A) -2 B) -1/2 C) 1/2 D) 2 Answer: C Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_25
+Question: Alan drives an average of 100 miles each week. His car can travel an average of 25 miles per gallon of gasoline. Alan would like to reduce his weekly expenditure on gasoline by $5. Assuming gasoline costs $4 per gallon, which equation can Alan use to determine how many fewer average miles, m, he should drive each week? Visual: None A) 425 m=95 B) 425 m=5 C) 254 m=95 D) 254 m=5 Answer: D Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_26
+Question: A local transit company sells a monthly pass for $95 that allows an unlimited number of trips of any length. Tickets for individual trips cost $1.50, $2.50, or $3.50, depending on the length of the trip. What is the minimum number of trips per month for which a monthly pass could cost less than purchasing individual tickets for trips? Visual: None A) 27 B) 28 C) 38 D) 64 Answer: B Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_27
+Question: In the xy-plane, line k intersects the y-axis at the point (0,-6) and passes through the point (2, 2). If the point (20, w) lies on line k, what is the value of w? Visual: None A) 74 B) 76 C) 80 D) 82 Answer: A Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_28
+Question: 4x−6y=10y+2,ty=21 +2x. In the given system of equations, t is a constant. If the system has no solution, what is the value of t? Visual: None A) -8 B) -4 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_29
+Question: F(x)=59 (x−273.15)+32. The function F gives the temperature, in degrees Fahrenheit, that corresponds to a temperature of x kelvins. If a temperature increased by 9.10 kelvins, by how much did the temperature increase, in degrees Fahrenheit? Visual: None A) 16.38 B) 48.38 C) 475.29 D) 507.29 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_30
+Question: During a month, Morgan ran r miles at 5 miles per hour and biked b miles at 10 miles per hour. She ran and biked a total of 200 miles that month, and she biked for twice as many hours as she ran. What is the total number of miles that Morgan biked during the month? Visual: None A) 80 B) 100 C) 120 D) 160 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_31
+Question: According to data provided by the US Department of Energy, the average price per gallon of regular gasoline in the United States from September 1, 2014, to December 1, 2014, is modeled by the function F defined below, where F(x) is the average price per gallon x months after September 1. F(x)=2.74−0.19(x−3). The constant 2.74 in this function estimates which of the following? Visual: None A) The average monthly decrease in the price per gallon B) The difference in the average price per gallon from September 1, 2014, to December 1, 2014 C) The average price per gallon on September 1, 2014 D) The average price per gallon on December 1, 2014 Answer: D Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_32
+Question: In the xy-plane, line l passes through the point (0, 0) and is parallel to the line represented by the equation y=8x+2. If line l also passes through the point (3, d), what is the value of d? Visual: None A) 24 B) 26 C) 28 D) 30 Answer: A Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_33
+Question: 21 x+31 y=61 ,ax+y=c. In the system of equations below, a and c are constants. If the system of equations has an infinite number of solutions (x,y) what is the value of a? Visual: None A) −21 B) 0 C) 21 D) 23 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_34
+Question: The graph of y=f(x)+14 is shown. Which equation defines function f? Visual: A line graph on an xy-plane with a grid. The x-axis ranges from -10 to 10. The y-axis ranges from -10 to 10. A single line is graphed, passing through the points (0, 2) and (8, 0). A) f(x)=−41 x−12 B) f(x)=−41 x+16 C) f(x)=−41 x+2 D) f(x)=−41 x−14 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_35
+Question: y>2x−1,2x>5. Which of the following consists of the y-coordinates of all the points that satisfy the system of inequalities above? Visual: None A) y>6 B) y>4 C) y>25 D) y>23 Answer: B Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_36
+Question: Ken is working this summer as part of a crew on a farm. He earned $8 per hour for the first 10 hours he worked this week. Because of his performance, his crew leader raised his salary to $10 per hour for the rest of the week. Ken saves 90% of his earnings from each week. What is the least number of hours he must work the rest of the week to save at least $270 for the week? Visual: None A) 38 B) 33 C) 22 D) 16 Answer: C Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_37
+Question: The table above shows some values of x and their corresponding values f(x) for the linear function f. What is the x-intercept of the graph of y=f(x) in the xy-plane? Visual: A table with two columns, x and f(x). The rows contain the following pairs of values: (-11, 21), (-10, 18), (-9, 15), (-8, 12). A) (-3,0) B) (-4,0) C) (-9,0) D) (-12,0) Answer: B Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_38
+Question: Store A sells raspberries for $5.50 per pint and blackberries for $3.00 per pint. Store B sells raspberries for $6.50 per pint and blackberries for $8.00 per pint. A certain purchase of raspberries and blackberries would cost $37.00 at Store A or $66.00 at Store B. How many pints of blackberries are in this purchase? Visual: None A) 4 B) 5 C) 8 D) 12 Answer: B Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_39
+Question: 5G+45R=380. At a school fair, students can win colored tokens that are worth a different number of points depending on the color. One student won G green tokens and R red tokens worth a total of 380 points. The given equation represents this situation. How many more points is a red token worth than a green token? Visual: None A) 8 B) 9 C) 40 D) 76 Answer: C Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_40
+Question: y=2x+1,y=ax−8. In the system of equations above, a is a constant. If the system of equations has no solution, what is the value of a? Visual: None A) −21 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_41
+Question: A shipping service restricts the dimensions of the boxes it will ship for a certain type of service. The restriction states that for boxes shaped like rectangular prisms, the sum of the perimeter of the base of the box and the height of the box cannot exceed 130 inches. The perimeter of the base is determined using the width and length of the box. If a box has a height of 60 inches and its length is 2.5 times the width, which inequality shows the allowable width x, in inches, of the box? Visual: None A) 0<x≤10 B) 0<x≤1132 C) 0<x≤1721 D) 0<x<20 Answer: A Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_42
+Question: The table above shows the coordinates of three points on a line in the xy-plane, where k and n are constants. If the slope of the line is 2, what is the value of k+n? Visual: A table with two columns, x and y. The rows contain the following pairs of values: (3, 7), (k, 11), (12, n). A) 5 B) 25 C) 30 D) 32 Answer: C Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_43
+Question: If 3x+6 =13x+6 , the value of x+6 is between which of the following pairs of values? Visual: None A) -7 and -3 B) -2 and 2 C) 2 and 7 D) 8 and 13 Answer: B Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_44
+Question: y=21 x+8,y=cx+10. In the system of equations above, c is a constant. If the system has no solution, what is the value of c? Visual: None A) -1/2 B) 0 C) 1/2 D) 1 Answer: C Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_45
+Question: 5x+14y=45,10x+7y=27. The solution to the given system of equations is (x, y). What is the value of xy? Visual: None A) 3/5 B) 3 C) 9/5 D) 15 Answer: C Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_46
+Question: I=RV . The formula above is Ohm's law for an electric circuit with current I, in amperes, potential difference V, in volts, and resistance R, in ohms. A circuit has a resistance of 500 ohms, and its potential difference will be generated by n six-volt batteries that produce a total potential difference of 6n volts. If the circuit is to have a current of no more than 0.25 ampere, what is the greatest number, n, of six-volt batteries that can be used? Visual: None A) 20 B) 21 C) 125 D) 500 Answer: A Category: math Domain: Algebra Skill: Linear inequalities in one or two variables Difficulty: hard
+QUESTION_47
+Question: F(x)=59 (x−273.15)+32. The function F gives the temperature, in degrees Fahrenheit, that corresponds to a temperature of x kelvins. If a temperature increased by 2.10 kelvins, by how much did the temperature increase, in degrees Fahrenheit? Visual: None A) 3.78 B) 35.78 C) 487.89 D) 519.89 Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_48
+Question: Line f in the xy-plane is perpendicular to the line with equation x=2. What is the slope of line f? Visual: None A) 0 B) −21 C) -2 D) The slope of line f is undefined. Answer: A Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_49
+Question: The Townsend Realty Group invested in the five different properties listed in the table above. The table shows the amount, in dollars, the company paid for each property and the corresponding monthly rental price, in dollars, the company charges for the property at each of the five locations. Townsend Realty purchased the Glenview Street property and received a 40% discount off the original price along with an additional 20% off the discounted price for purchasing the property in cash. Which of the following best approximates the original price, in dollars, of the Glenview Street property? Visual: A table with three columns: Property address, Purchase price (dollars), and Monthly rental price (dollars). The properties are Clearwater Lane (128,000, 950), Driftwood Drive (176,000, 1,310), Edgemont Street (70,000, 515), Glenview Street (140,000, 1,040), and Hamilton Circle (450,000, 3,365). A) $350,000 B) $291,700 C) $233,300 D) $175,000 Answer: B Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_50
+Question: One gallon of paint will cover 220 square feet of a surface. A room has a total wall area of w square feet. Which equation represents the total amount of paint P, in gallons, needed to paint the walls of the room twice? Visual: None A) P=110w B) P=440w C) P=220w D) P=220w Answer: A Category: math Domain: Algebra Skill: Linear functions Difficulty: hard
+QUESTION_51
+Question: h(x)=2(x−4)2−32. The quadratic function h is defined as shown. In the xy-plane, the graph of y=h(x) intersects the x-axis at the points (0,0) and (t,0), where t is a constant. What is the value of t? Visual: None A) 1 B) 2 C) 4 D) 8 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_52
+Question: 2∣4−x∣+3∣4−x∣=25. What is the positive solution to the given equation? Visual: None A) -1 B) 5 C) 9 D) 25 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_53
+Question: In the xy-plane, a line with equation 2y=4.5 intersects a parabola at exactly one point. If the parabola has equation y=−4x2+bx, where b is a positive constant, what is the value of b? Visual: None A) 2.25 B) 4.5 C) 6 D) 9 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_54
+Question: f(x)=9,000(0.66)x. The given function f models the number of advertisements a company sent to its clients each year, where x represents the number of years since 1997, and 0≤x≤5. If y=f(x) is graphed in the xy-plane, which of the following is the best interpretation of the y-intercept of the graph in this context? Visual: None A) The minimum estimated number of advertisements the company sent to its clients during the 5 years was 1,708. B) The minimum estimated number of advertisements the company sent to its clients during the 5 years was 9,000. C) The estimated number of advertisements the company sent to its clients in 1997 was 1,708. D) The estimated number of advertisements the company sent to its clients in 1997 was 9,000. Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_55
+Question: x−y=1,x+y=x2−3. Which ordered pair is a solution to the system of equations above? Visual: None A) (1+3 ,3 ) B) (3 ,−3 ) C) (1+5 ,5 ) D) (5 ,−1+5 ) Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_56
+Question: (ax+3)(5x2−bx+4)=20x3−9x2−2x+12. The equation above is true for all x, where a and b are constants. What is the value of ab? Visual: None A) 18 B) 20 C) 24 D) 40 Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_57
+Question: Which of the following expressions is(are) a factor of 3x2+20x−63? I. x−9 II. 3x−7 Visual: None A) I only B) II only C) I and II D) Neither I nor II Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_58
+Question: If 3x4 x5 =xba for all positive values of x, what is the value of ba ? Visual: None A) 5/12 B) 7/6 C) 4/3 D) 5/2 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_59
+Question: Function f is defined by f(x)=−ax+b, where a and b are constants. In the xy-plane, the graph of y=f(x)−12 has a y-intercept at (0,−775 ). The product of a and b is 7320 . What is the value of a? Visual: None A) 5 B) 16/7 C) 20 D) 320/7 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_60
+Question: x2+10x+251 =4. If x is a solution to the given equation, which of the following is a possible value of x+5? Visual: None A) 21 B) 25 C) 29 D) 211 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_61
+Question: During a 5-second time interval, the average acceleration a, in meters per second squared, of an object with an initial velocity of 12 meters per second is defined by the equation a=5vf −12 where vf is the final velocity of the object in meters per second. If the equation is rewritten in the form vf =xa+y, where x and y are constants, what is the value of x? Visual: None A) 5 B) 12 C) 17 D) 60 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_62
+Question: f(x)=−500x2+25,000x. The revenue f(x), in dollars, that a company receives from sales of a product is given by the function f above, where x is the unit price, in dollars, of the product. The graph of y=f(x) in the xy-plane intersects the x-axis at 0 and a. What does a represent? Visual: None A) The revenue, in dollars, when the unit price of the product is $0 B) The unit price, in dollars, of the product that will result in maximum revenue C) The unit price, in dollars, of the product that will result in a revenue of $0 D) The maximum revenue, in dollars, that the company can make Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_63
+Question: x−22 +x+53 =(x−2)(x+5)rx+t . The equation above is true for all x>2 where r and t are positive constants. What is the value of rt? Visual: None A) -20 B) 15 C) 20 D) 60 Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_64
+Question: A culture of bacteria is growing at an exponential rate, as shown in the table above. At this rate, on which day would the number of bacteria per milliliter reach 5.12×108? Visual: A table titled "Growth of a Culture of Bacteria" with two columns: Day, and Number of bacteria per milliliter at end of day. The rows are: Day 1, 2.5x10^5; Day 2, 5.0x10^5; Day 3, 1.0x10^6. A) Day 5 B) Day 9 C) Day 11 D) Day 12 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_65
+Question: 570n (670n )2. For what value of x is the given expression equivalent to (70n)30x where n>1? Visual: None A) 4/225 B) 8/15 C) 1/5 D) 1/3 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_66
+Question: 2x2−2=2x+3. Which of the following is a solution to the equation above? Visual: None A) 2 B) 1−11 C) 21 +11 D) 21+11 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_67
+Question: f(x)=ax2+4x+c. In the given quadratic function, a and c are constants. The graph of y=f(x) in the xy-plane is a parabola that opens upward and has a vertex at the point (h, k), where h and k are constants. If k<0 and f(−9)=f(3), which of the following must be true? I. c<0 II. a≥1 Visual: None A) I only B) II only C) I and II D) Neither I nor II Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_68
+Question: In the xy-plane, a line with equation y=c for some constant c intersects a parabola at exactly one point. If the parabola has equation y=−x2+5x, what is the value of c? Visual: None A) 20.25 B) 81/4 C) 6.25 D) 25/4 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_69
+Question: The expression (2x2+3x−7)(x−2) is equivalent to the expression ax3+bx2+cx+d, where a, b, c, and d are constants. What is the value of a+b+c+d? Visual: None A) -4 B) -14 C) -18 D) -419 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_70
+Question: Which expression is equivalent to x+22x2−4 ? Visual: None A) 2x+2 B) 2x−2 C) 2x−4+x+24 D) 2x−4+x+24 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_71
+Question: In the expression x−bx2−c , b and c are positive integers. If the expression is equivalent to x+b and x=b, which of the following could be the value of c? Visual: None A) 4 B) 6 C) 8 D) 10 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_72
+Question: The function f is defined by f(x)=(x−6)(x+12). For what value of x does f(x) reach its minimum? Visual: None A) -12 B) -6 C) -3 D) 3 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_73
+Question: 2x2+4x=t. In the equation above, t is a constant. If the equation has no real solutions, which of the following could be the value of t? Visual: None A) -3 B) -2 C) 1 D) 3 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_74
+Question: A model estimates that at the end of each year from 2015 to 2020, the number of squirrels in a population was 15% more than the number of squirrels in the population at the end of the previous year. The model estimates that at the end of 2016, there were 180 squirrels in the population. Which of the following equations represents this model, where S is the estimated number of squirrels in the population t years after the end of 2015 and 0≤t≤5? Visual: None A) S=180(1.15)t−1 B) S=156.5(1.15)t C) S=180(0.85)t D) S=156.5(0.85)t−1 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_75
+Question: The expression 31 x2−2 can be rewritten as 31 (x−k)(x+k), where k is a positive constant. What is the value of k? Visual: None A) 2 B) 6 C) 2 D) 6 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_76
+Question: y=x2−4x−1,y+3=x. If (x1 ,y1 ) and (x2 ,y2 ) are the two solutions to the system of equations above, what is the value of y1 +y2 ? Visual: None A) -3 B) -1 C) 1 D) 4 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_77
+Question: If u−t=t−22 , what is t in terms of u? Visual: None A) u+2 B) u−2 C) 2u+u2+16 D) 2u±u2−16 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_78
+Question: y=x2−6x+10,y−x=k. The graphs of the equations in the given system of equations intersect at the point (x,y) in the xy-plane. What is a possible value of x? Visual: None A) 3−k−1 B) 3+k+1 C) 3−k−10 D) 3+k+10 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_79
+Question: The table above gives selected values of a polynomial function p. Based on the values in the table, which of the following must be a factor of p? Visual: A table with two columns, x and p(x). The rows contain the following pairs of values: (-2, 0), (-1, 4), (0, 5), (1, 3), (2, 0). A) x−5 B) x−2 C) x+2 D) x2−4 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_80
+Question: When the quadratic function f(x)=ax2+bx+c is graphed in the xy-plane, where y=f(x), its vertex is (−3,6). One of the x-intercepts of this graph is −17/4. What is the other x-intercept of the graph? Visual: None A) −19/4 B) −7/4 C) 3 D) 6 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_81
+Question: The function f is defined by f(x)=(x+4)(x−8). The graph of f in the xy-plane is a parabola. Which of the following intervals contains the x-coordinate of the vertex of the graph of f? Visual: None A) −5<x<−3 B) 1<x<3 C) 3<x<5 D) 5<x<7 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_82
+Question: A landscaper is designing a rectangular garden. The length of the garden is to be 5 feet longer than the width. If the area of the garden will be 104 square feet, what will be the length, in feet, of the garden? Visual: None A) 8 B) 13 C) 18 D) 26 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_83
+Question: In the xy-plane, the graph of y=x2+x+10 intersects line p at (1,a) and (5,b), where a and b are constants. What is the slope of line p? Visual: None A) 6 B) 7 C) 10 D) 12 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_84
+Question: For the function f, f(0)=86, and for each increase in x by 1, the value of f(x) decreases by 80%. What is the value of f(2)? Visual: None A) 3.44 B) 17.2 C) 68.8 D) 86 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_85
+Question: M=1,800(1.02)t. The equation above models the number of members, M, of a gym t years after the gym opens. Of the following, which equation models the number of members of the gym q quarter years after the gym opens? Visual: None A) M=1,800(1.005)q B) M=1,800(1.02)q/4 C) M=1,800(1.08)q D) M=1,800(1.02)4q Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_86
+Question: D=T−0.006(H−100). The formula above can be used to approximate the dew point D, in degrees Fahrenheit, given the temperature T, in degrees Fahrenheit, and the relative humidity of H percent, where H≥50. Which of the following expresses the relative humidity in terms of the temperature and the dew point? Visual: None A) H=100−0.006T−D B) H=100+0.006T−D C) H=100−0.006D−T D) H=0.006D−T+100 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_87
+Question: Which of the following is equivalent to (x2+x+3)(x−1)? Visual: None A) x3−3 B) x3+2x−3 C) x3+2x2+2x−3 D) x3+2x+3 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_88
+Question: The surface area of a cube is 6a2, where a is a positive constant. Which of the following gives the perimeter of one face of the cube? Visual: None A) a B) 4a C) 6a D) a2 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_89
+Question: In the xy-plane, the graph of y=x2−5x intersects the graph of y=x at the points (0,0) and (a,a). What is the value of a? Visual: None A) 4 B) 5 C) 6 D) 7 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_90
+Question: One of the factors of 2x3+14x2+24x is x+b, where b is a positive constant. What is the smallest possible value of b? Visual: None A) 2 B) 3 C) 4 D) 6 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_91
+Question: The table shows three values of x and their corresponding values of y=f(x), where f is a quadratic function. What is the y-coordinate of the y-intercept of the graph of y=f(x) in the xy-plane? Visual: A table with two columns, x and y. The rows contain the following pairs of values: (8, 2), (12, 2), (10, -2). A) -21 B) -19 C) -12 D) -10 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_92
+Question: A quadratic function models the height, in feet, of an object above the ground in terms of the time, in seconds, after the object is launched off an elevated surface. The model indicates the object has an initial height of 180 feet above the ground and reaches its maximum height of 244 feet above the ground 2 seconds after being launched. Based on the model, what is the height, in feet, of the object above the ground 4 seconds after being launched? Visual: None A) 116 B) 148 C) 180 D) 244 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_93
+Question: The function f is defined by f(x)=a(x−h)2+k, where a, h, and k are positive constants. The graph of y=f(x) in the xy-plane passes through the points (h, 5) and (2h, 9). What is the value of a? Visual: None A) 4/h^2 B) 5 C) 9 D) h^2/4 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_94
+Question: x−3x2−x−6 =x+a. The equation is true for all x>3, where a is an integer. What is the value of a? Visual: None A) -2 B) -1 C) 0 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_95
+Question: The expression 5x2−15x+10 can be written in the form a(x−b)(x−c), where a, b, and c are constants. What is the value of a+b+c? Visual: None A) 8 B) 9 C) 10 D) 12 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_96
+Question: If a=c+d and x=a2−c2−2cd−d2, which of the following is equivalent to the expression x? Visual: None A) x−a2 B) x2−a2 C) (x+a)(x−a) D) x−a Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_97
+Question: A rectangular poster has an area of 432 square inches. A copy of the poster is made in which the length and width of the original poster are each increased by 50%. What is the area of the copy, in square inches? Visual: None A) 216 B) 648 C) 972 D) 1296 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_98
+Question: A right circular cone has a volume of 31 π cubic feet and a height of 9 feet. What is the radius, in feet, of the base of the cone? Visual: None A) 31 B) 3 1 C) 1 D) 3 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_99
+Question: In the figure, parallel lines l and m are intersected by lines t and u. If x=65 and y=36, what is the value of z? Visual: A diagram showing two parallel horizontal lines, l and m. Two transversals, t and u, intersect the parallel lines and each other. The angle labeled x is an interior angle formed by lines l and t. The angle labeled y is an interior angle formed by lines m and u. The angle labeled z is in the triangle formed by the intersection of l, t, and u. A) 79 B) 90 C) 101 D) 115 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Lines, angles, and triangles Difficulty: hard
+QUESTION_100
+Question: In the figure above, RT≅TU. What is the value of x? Visual: A triangle RST with a point U on side RS. A line segment connects T and U. Angle R is 26 degrees. Angle TSU is 52 degrees. Angle RTU is x degrees. A) 26 B) 52 C) 78 D) 104 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Lines, angles, and triangles Difficulty: hard
+QUESTION_101
+Question: In the xy-plane, a line with equation y=c for some constant c intersects a parabola at exactly one point. If the parabola has equation y=−x2+5x, what is the value of c? Visual: None A) 6.25 B) 6.5 C) 7.25 D) 7.5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_102
+Question: The expression (2x2+3x−7)(x−2) is equivalent to the expression ax3+bx2+cx+d, where a, b, c, and d are constants. What is the value of a+b+c+d? Visual: None A) -4 B) -14 C) -18 D) -419 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_103
+Question: Which expression is equivalent to x+22x2−4 ? Visual: None A) 2x+2 B) 2x−2 C) 2x−4+x+24 D) 2x−4+x+24 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_104
+Question: In the expression x−bx2−c , b and c are positive integers. If the expression is equivalent to x+b and x=b, which of the following could be the value of c? Visual: None A) 4 B) 6 C) 8 D) 10 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_105
+Question: The function f is defined by f(x)=(x−6)(x+12). For what value of x does f(x) reach its minimum? Visual: None A) -12 B) -6 C) -3 D) 3 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_106
+Question: 2x2+4x=t. In the equation above, t is a constant. If the equation has no real solutions, which of the following could be the value of t? Visual: None A) -3 B) -2 C) 1 D) 3 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_107
+Question: A model estimates that at the end of each year from 2015 to 2020, the number of squirrels in a population was 15% more than the number of squirrels in the population at the end of the previous year. The model estimates that at the end of 2016, there were 180 squirrels in the population. Which of the following equations represents this model, where S is the estimated number of squirrels in the population t years after the end of 2015 and 0≤t≤5? Visual: None A) S=180(1.15)t−1 B) S=156.5(1.15)t C) S=180(0.85)t D) S=156.5(0.85)t−1 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_108
+Question: The expression 31 x2−2 can be rewritten as 31 (x−k)(x+k), where k is a positive constant. What is the value of k? Visual: None A) 2 B) 6 C) 2 D) 6 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_109
+Question: y=x2−4x−1,y+3=x. If (x1 ,y1 ) and (x2 ,y2 ) are the two solutions to the system of equations above, what is the value of y1 +y2 ? Visual: None A) -3 B) -1 C) 1 D) 4 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_110
+Question: In the expression 6x2+(3p−16p−64)x+24, p is a constant. This expression is equivalent to the expression 6x2−155x+24. What is the value of p? Visual: None A) -3 B) 7 C) 13 D) 155 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_111
+Question: What is the solution set of the equation 2x+6 +4=x+3? Visual: None A) {−1} B) {5} C) {−1,5} D) {0,−1,5} Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_112
+Question: The graph of the function f, defined by f(x)=−21 (x−4)2+10, is shown in the xy-plane above. If the function g (not shown) is defined by g(x)=−x+10, what is one possible value of a such that f(a)=g(a)? Visual: A parabola opening downwards is graphed on an xy-plane. The vertex is at (4, 10). The x-intercepts are approximately at -0.5 and 8.5. The y-intercept is at (0, 2). A) 1 B) 2 C) 4 D) 8 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_113
+Question: The population P of a certain city y years after the last census is modeled by the equation below, where r is a constant and P0 is the population when y=0. P=P0 (1+r)y. If during this time the population of the city decreases by a fixed percent each year, which of the following must be true? Visual: None A) r<−1 B) −1<r<0 C) 0<r<1 D) r>1 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_114
+Question: In the given equation, 4x2+kx+9=0, k is a constant. The equation has exactly one solution. What is the value of k? Visual: None A) -12 B) -6 C) 6 D) 12 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_115
+Question: The expression x2−4x2−x−2 , where x=−2 and x=2, is equivalent to which of the following? Visual: None A) x+2x+1 B) x−2x−1 C) x−2x+1 D) x+2x−1 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_116
+Question: Which of the following expressions is equivalent to x−2x2+3x−10 , for x=2? Visual: None A) x−5 B) x+5 C) x−2 D) x+2 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_117
+Question: The expression x4−8x2+16 can be rewritten as (x−k)2(x+k)2, where k is a positive constant. What is the value of k? Visual: None A) 2 B) 4 C) 8 D) 16 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_118
+Question: y=x2−2x−15,y=x+5. If (x1 ,y1 ) and (x2 ,y2 ) are the two solutions to the system of equations above, what is the value of x1 +x2 ? Visual: None A) -3 B) 3 C) 5 D) 7 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_119
+Question: If t=u−2u+2 , what is u in terms of t? Visual: None A) t−12(t+1) B) t+12(t−1) C) 2(t−1)t+1 D) 2(t+1)t−1 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_120
+Question: y=x2−6x+10,y−x=k. The graphs of the equations in the given system of equations intersect at the point (x,y) in the xy-plane. What is a possible value of x? Visual: None A) 3−k−1 B) 3+k+1 C) 3−k−10 D) 3+k+10 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_121
+Question: The table above gives selected values of a polynomial function p. Based on the values in the table, which of the following must be a factor of p? Visual: A table with two columns, x and p(x). The rows contain the following pairs of values: (-2, 0), (-1, 4), (0, 5), (1, 3), (2, 0). A) x−5 B) x−2 C) x+2 D) x2−4 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_122
+Question: When the quadratic function f(x)=ax2+bx+c is graphed in the xy-plane, where y=f(x), its vertex is (−3,6). One of the x-intercepts of this graph is −17/4. What is the other x-intercept of the graph? Visual: None A) −19/4 B) −7/4 C) 3 D) 6 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_123
+Question: The function f is defined by f(x)=(x+4)(x−8). The graph of f in the xy-plane is a parabola. Which of the following intervals contains the x-coordinate of the vertex of the graph of f? Visual: None A) −5<x<−3 B) 1<x<3 C) 3<x<5 D) 5<x<7 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_124
+Question: A landscaper is designing a rectangular garden. The length of the garden is to be 5 feet longer than the width. If the area of the garden will be 104 square feet, what will be the length, in feet, of the garden? Visual: None A) 8 B) 13 C) 18 D) 26 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_125
+Question: In the xy-plane, the graph of y=x2+x+10 intersects line p at (1,a) and (5,b), where a and b are constants. What is the slope of line p? Visual: None A) 6 B) 7 C) 10 D) 12 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_126
+Question: For the function f, f(0)=86, and for each increase in x by 1, the value of f(x) decreases by 80%. What is the value of f(2)? Visual: None A) 3.44 B) 17.2 C) 68.8 D) 86 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_127
+Question: M=1,800(1.02)t. The equation above models the number of members, M, of a gym t years after the gym opens. Of the following, which equation models the number of members of the gym q quarter years after the gym opens? Visual: None A) M=1,800(1.005)q B) M=1,800(1.02)q/4 C) M=1,800(1.08)q D) M=1,800(1.02)4q Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_128
+Question: D=T−0.006(H−100). The formula above can be used to approximate the dew point D, in degrees Fahrenheit, given the temperature T, in degrees Fahrenheit, and the relative humidity of H percent, where H≥50. Which of the following expresses the relative humidity in terms of the temperature and the dew point? Visual: None A) H=100−0.006T−D B) H=100+0.006T−D C) H=100−0.006D−T D) H=0.006D−T+100 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_129
+Question: Which of the following is equivalent to (x2+x+3)(x−1)? Visual: None A) x3−3 B) x3+2x−3 C) x3+2x2+2x−3 D) x3+2x+3 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_130
+Question: The surface area of a cube is 6a2, where a is a positive constant. Which of the following gives the perimeter of one face of the cube? Visual: None A) a B) 4a C) 6a D) a2 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_131
+Question: In the xy-plane, the graph of y=x2−5x intersects the graph of y=x at the points (0,0) and (a,a). What is the value of a? Visual: None A) 4 B) 5 C) 6 D) 7 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_132
+Question: One of the factors of 2x3+14x2+24x is x+b, where b is a positive constant. What is the smallest possible value of b? Visual: None A) 2 B) 3 C) 4 D) 6 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_133
+Question: The table shows three values of x and their corresponding values of y=f(x), where f is a quadratic function. What is the y-coordinate of the y-intercept of the graph of y=f(x) in the xy-plane? Visual: A table with two columns, x and y. The rows contain the following pairs of values: (8, 2), (12, 2), (10, -2). A) -21 B) -19 C) -12 D) -10 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_134
+Question: A quadratic function models the height, in feet, of an object above the ground in terms of the time, in seconds, after the object is launched off an elevated surface. The model indicates the object has an initial height of 180 feet above the ground and reaches its maximum height of 244 feet above the ground 2 seconds after being launched. Based on the model, what is the height, in feet, of the object above the ground 4 seconds after being launched? Visual: None A) 116 B) 148 C) 180 D) 244 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_135
+Question: The function f is defined by f(x)=a(x−h)2+k, where a, h, and k are positive constants. The graph of y=f(x) in the xy-plane passes through the points (h, 5) and (2h, 9). What is the value of a? Visual: None A) 4/h^2 B) 5 C) 9 D) h^2/4 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_136
+Question: x−3x2−x−6 =x+a. The equation is true for all x>3, where a is an integer. What is the value of a? Visual: None A) -2 B) -1 C) 0 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_137
+Question: The expression 5x2−15x+10 can be written in the form a(x−b)(x−c), where a, b, and c are constants. What is the value of a+b+c? Visual: None A) 8 B) 9 C) 10 D) 12 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_138
+Question: If a=c+d and x=a2−c2−2cd−d2, which of the following is equivalent to the expression x? Visual: None A) x−a2 B) x2−a2 C) (x+a)(x−a) D) x−a Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_139
+Question: A rectangular poster has an area of 432 square inches. A copy of the poster is made in which the length and width of the original poster are each increased by 50%. What is the area of the copy, in square inches? Visual: None A) 216 B) 648 C) 972 D) 1296 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_140
+Question: A right circular cone has a volume of 31 π cubic feet and a height of 9 feet. What is the radius, in feet, of the base of the cone? Visual: None A) 31 B) 3 1 C) 1 D) 3 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_141
+Question: In the figure, parallel lines l and m are intersected by lines t and u. If x=65 and y=36, what is the value of z? Visual: A diagram showing two parallel horizontal lines, l and m. Two transversals, t and u, intersect the parallel lines and each other. The angle labeled x is an interior angle formed by lines l and t. The angle labeled y is an interior angle formed by lines m and u. The angle labeled z is in the triangle formed by the intersection of l, t, and u. A) 79 B) 90 C) 101 D) 115 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Lines, angles, and triangles Difficulty: hard
+QUESTION_142
+Question: In the figure above, RT≅TU. What is the value of x? Visual: A triangle RST with a point U on side RS. A line segment connects T and U. Angle R is 26 degrees. Angle TSU is 52 degrees. Angle RTU is x degrees. A) 26 B) 52 C) 78 D) 104 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Lines, angles, and triangles Difficulty: hard
+QUESTION_143
+Question: In the xy-plane, the graph of 2x2−6x+2y2+2y=45 is a circle. What is the radius of the circle? Visual: None A) 5 B) 6.5 C) 40 D) 50 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_144
+Question: A grain silo is built from two right circular cones and a right circular cylinder with internal measurements represented by the figure above. Of the following, which is closest to the volume of the grain silo, in cubic feet? Visual: A diagram of a grain silo composed of a cylinder with a cone on top and a cone on the bottom. The cylinder has a height of 10 feet and a radius of 5 feet. The top cone has a height of 5 feet. The bottom cone has the same radius. A) 262 B) 785 C) 916 D) 1,047 Answer: D Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_145
+Question: In the xy-plane, the graph of the equation x2+y2+4x−6y−12=0 is a circle. What are the coordinates of the center of the circle? Visual: None A) (−2,3) B) (2,−3) C) (4,−6) D) (−4,6) Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_146
+Question: In triangle ABC above, sin(B)=135 . What is the length of side AC? Visual: A right triangle ABC with the right angle at C. The length of the hypotenuse AB is 26. A) 5 B) 10 C) 12 D) 24 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_147
+Question: In triangles ABC and DEF, angles B and E each have measure 27 degrees, and angles C and F each have measure 45 degrees. Which additional piece of information is sufficient to prove that triangle ABC is congruent to triangle DEF? Visual: None A) The measure of angle A is 108 degrees. B) The length of side BC is equal to the length of side EF. C) The length of side AB is equal to the length of side DE. D) The length of side AC is equal to the length of side DF. Answer: C Category: math Domain: Geometry and Trigonometry Skill: Lines, angles, and triangles Difficulty: hard
+QUESTION_148
+Question: The equation x2+y2−6x+8y=144 defines a circle in the xy-plane. What are the coordinates of the center of the circle? Visual: None A) (−3,4) B) (3,−4) C) (6,−8) D) (−6,8) Answer: B Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_149
+Question: In the triangle shown, what is the value of tan(x)? Visual: A right triangle with angles x and y. The side opposite x is 16. The side opposite y is 23. A) 16/23 B) 23/16 C) 16/sqrt(785) D) 23/sqrt(785) Answer: A Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_150
+Question: Point O is the center of the circle above, and the measure of angle AOB is 3π radians. If the length of OA is 18, what is the length of arc AB? Visual: A circle with center O. Points A and B are on the circle, forming an arc. A) 3π B) 6π C) 9π D) 12π Answer: B Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_151
+Question: In the xy-plane, the graph of the equation y=x2−8x+12 is a parabola. What is the distance between the x-intercepts of the parabola? Visual: None A) 2 B) 4 C) 6 D) 8 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_152
+Question: The equation x2+y2−6x+8y=144 defines a circle in the xy-plane. What is the radius of the circle? Visual: None A) 5 B) 12 C) 13 D) 144 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_153
+Question: In the xy-plane, the graph of y=3x2−14x intersects the graph of y=x at the points (0,0) and (a,a). What is the value of a? Visual: None A) 3 B) 4 C) 5 D) 6 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_154
+Question: The number of radians in a 720-degree angle can be written as kπ, where k is a constant. What is the value of k? Visual: None A) 2 B) 4 C) 6 D) 8 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_155
+Question: A right triangle has sides of length x, y, and z, where z is the hypotenuse. If the perimeter of the triangle is 30 and the area is 30, what is the value of z? Visual: None A) 5 B) 12 C) 13 D) 15 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_156
+Question: In the xy-plane, the graph of the function f(x)=x2+5x+4 has two x-intercepts. What is the distance between the x-intercepts? Visual: None A) 1 B) 2 C) 3 D) 4 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_157
+Question: A right circular cone has a height of 12 and a radius of 5. What is the volume of the cone? Visual: None A) 25π B) 100π C) 300π D) 400π Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_158
+Question: In the xy-plane, the point (3,6) lies on the graph of the function f(x)=3x2−bx+12. What is the value of b? Visual: None A) -3 B) 3 C) 9 D) 15 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_159
+Question: The equation of a circle in the xy-plane is shown above. What is the radius of the circle? x2+y2−6x+8y=144 Visual: None A) 5 B) 12 C) 13 D) 144 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_160
+Question: The expression x+35x−2 is equivalent to which of the following? Visual: None A) 5−32 B) 5−x+317 C) 5−x+32 D) 1+3/x5−2/x Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_161
+Question: The table above shows the distribution of age and gender for 25 people who entered a contest. If the contest winner is selected at random, what is the probability that the winner will be either a female under age 40 or a male age 40 or older? Visual: A table with columns for Male and Female, and rows for Under age 40 and Age 40 or older. The data is: Male Under 40: 8, Female Under 40: 8, Male 40 or older: 2, Female 40 or older: 7. A) 4/25 B) 10/25 C) 14/25 D) 16/25 Answer: B Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_162
+Question: The graph of a line in the xy-plane has slope 2 and contains the point (1, 8). The graph of a second line passes through the points (1, 2) and (2, 1). If the two lines intersect at the point (a, b), what is the value of a+b? Visual: None A) 4 B) 1 C) -1 D) -4 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_163
+Question: Which of the following equations has a graph in the xy-plane for which y is always greater than or equal to -1? Visual: None A) y=∣x∣−2 B) y=x2−2 C) y=(x−2)2 D) y=x3−2 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_164
+Question: Which of the following complex numbers is equivalent to 8+2i3−5i ? (Note: i=−1 ) Visual: None A) 347 −3423i B) 347 +3423i C) 6814 −6846i D) 6814 +6846i Answer: A Category: math Domain: Additional Topics in Math Skill: Complex numbers Difficulty: hard
+QUESTION_165
+Question: A website-hosting service charges businesses a onetime setup fee of $350 plus d dollars for each month. If a business owner paid $1,010 for the first 12 months, including the setup fee, what is the value of d? Visual: None A) 25 B) 35 C) 45 D) 55 Answer: D Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_166
+Question: 2x(3x+5)+3(3x+5)=ax2+bx+c. In the equation above, a, b, and c are constants. If the equation is true for all values of x, what is the value of b? Visual: None A) 8 B) 16 C) 19 D) 31 Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_167
+Question: A circle in the xy-plane has center (5, -12) and radius 8. Which of the following is an equation of the circle? Visual: None A) (x−5)2+(y+12)2=64 B) (x+5)2+(y−12)2=64 C) (x−5)2+(y+12)2=8 D) (x+5)2+(y−12)2=8 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_168
+Question: In the figure above, triangle ABC is similar to triangle DEF. What is the value of cos(E)? Visual: A right triangle ABC with right angle at B. AB=12, BC=5, AC=13. A) 12/13 B) 5/13 C) 12/5 D) 5/12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_169
+Question: A dairy farmer uses a storage silo that is in the shape of the right circular cylinder above. If the volume of the silo is 72pi cubic yards, what is the diameter of the base of the cylinder, in yards? Visual: A right circular cylinder with a height of 8 yards. A) 3 B) 6 C) 9 D) 12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_170
+Question: For what value of x is the function h(x) = 1? Visual: A graph of a function h(x) is shown. It passes through the points (-1, -2), (0, -1), (1, 0), (2, 1), (3, 2). A) -1 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_171
+Question: The formula for the monthly payment, m, on a loan is given by the formula m=(1+r)n−1Pr(1+r)n , where P is the principal, r is the monthly interest rate, and n is the number of months. Which of the following gives P in terms of m, r, and n? Visual: None A) P=r(1+r)nm(1+r)n−1 B) P=(1+r)n−1m(1+r)n C) P=r(1+r)nm(1+r)n−m D) P=(1+r)n−1mr(1+r)n Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_172
+Question: If ba =2, what is the value of a4b ? Visual: None A) 0 B) 1 C) 2 D) 4 Answer: C Category: math Domain: Algebra Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_173
+Question: The scatterplot above shows the relationship between the number of hours that a group of students spent studying for a test and their scores on the test. Which of the following is the best interpretation of the y-intercept of the line of best fit? Visual: A scatterplot with "Hours of Study" on the x-axis and "Test Score" on the y-axis. A line of best fit is drawn through the data points. The y-intercept is at approximately 60. A) The predicted score of a student who studied for 0 hours. B) The predicted score of a student who studied for 10 hours. C) The predicted increase in score for each additional hour of study. D) The predicted number of hours of study for a student who scored 0. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_174
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_175
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_176
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_177
+Question: In the xy-plane, the parabola with equation y=(x−11)2 intersects the line with equation y=25 at two points, A and B. What is the length of the segment AB? Visual: None A) 10 B) 12 C) 14 D) 16 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_178
+Question: In the xy-plane, the line with equation y=3x+2 is parallel to the line with equation y=ax+b. What is the value of a? Visual: None A) -3 B) -2 C) 2 D) 3 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_179
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_180
+Question: If f(x)=−2x+5, what is f(−3x) equal to? Visual: None A) 6x+5 B) 6x−5 C) −6x+5 D) −6x−5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_181
+Question: A system of three equations is shown above. What is the value of x+y+z? Visual: Three equations are shown: x+y=8, y+z=12, x+z=10. A) 10 B) 15 C) 20 D) 30 Answer: B Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_182
+Question: The expression 2x+11 is equivalent to which of the following? Visual: None A) 4x2−12x−1 B) 4x2+12x+1 C) 4x2+12x−1 D) 4x2−12x+1 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_183
+Question: The graph of a line in the xy-plane passes through the origin and has a slope of 1/7. Which of the following points lies on the line? Visual: None A) (0,7) B) (1,7) C) (7,1) D) (14,2) Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_184
+Question: If x>3, which of the following is equivalent to x+21 +x+31 1 ? Visual: None A) x2+5x+62x+5 B) 2x+5x2+5x+6 C) 2x+5 D) x2+5x+6 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_185
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_186
+Question: If f(x)=x−1x2−6x+3 , what is f(−1)? Visual: None A) -5 B) -2 C) 2 D) 5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_187
+Question: A circle in the xy-plane has center (5,-12) and radius 8. Which of the following is an equation of the circle? Visual: None A) (x−5)2+(y+12)2=64 B) (x+5)2+(y−12)2=64 C) (x−5)2+(y+12)2=8 D) (x+5)2+(y−12)2=8 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_188
+Question: In the figure above, triangle ABC is similar to triangle DEF. What is the value of cos(E)? Visual: A right triangle ABC with right angle at B. AB=12, BC=5, AC=13. A) 12/13 B) 5/13 C) 12/5 D) 5/12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_189
+Question: A dairy farmer uses a storage silo that is in the shape of the right circular cylinder above. If the volume of the silo is 72pi cubic yards, what is the diameter of the base of the cylinder, in yards? Visual: A right circular cylinder with a height of 8 yards. A) 3 B) 6 C) 9 D) 12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_190
+Question: For what value of x is the function h(x) = 1? Visual: A graph of a function h(x) is shown. It passes through the points (-1, -2), (0, -1), (1, 0), (2, 1), (3, 2). A) -1 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_191
+Question: The formula for the monthly payment, m, on a loan is given by the formula m=(1+r)n−1Pr(1+r)n , where P is the principal, r is the monthly interest rate, and n is the number of months. Which of the following gives P in terms of m, r, and n? Visual: None A) P=r(1+r)nm(1+r)n−1 B) P=(1+r)n−1m(1+r)n C) P=r(1+r)nm(1+r)n−m D) P=(1+r)n−1mr(1+r)n Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_192
+Question: If ba =2, what is the value of a4b ? Visual: None A) 0 B) 1 C) 2 D) 4 Answer: C Category: math Domain: Algebra Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_193
+Question: The scatterplot above shows the relationship between the number of hours that a group of students spent studying for a test and their scores on the test. Which of the following is the best interpretation of the y-intercept of the line of best fit? Visual: A scatterplot with "Hours of Study" on the x-axis and "Test Score" on the y-axis. A line of best fit is drawn through the data points. The y-intercept is at approximately 60. A) The predicted score of a student who studied for 0 hours. B) The predicted score of a student who studied for 10 hours. C) The predicted increase in score for each additional hour of study. D) The predicted number of hours of study for a student who scored 0. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_194
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_195
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_196
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_197
+Question: In the xy-plane, the parabola with equation y=(x−11)2 intersects the line with equation y=25 at two points, A and B. What is the length of the segment AB? Visual: None A) 10 B) 12 C) 14 D) 16 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_198
+Question: In the xy-plane, the line with equation y=3x+2 is parallel to the line with equation y=ax+b. What is the value of a? Visual: None A) -3 B) -2 C) 2 D) 3 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_199
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_200
+Question: If f(x)=−2x+5, what is f(−3x) equal to? Visual: None A) 6x+5 B) 6x−5 C) −6x+5 D) −6x−5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_201
+Question: The table shows the results of a survey in which tablet users were asked how often they would watch video advertisements in order to access streaming content for free. Based on the survey, which of the following is closest to the probability that a tablet user answered "Always," given that the tablet user did not answer "Never"? Visual: A table with two columns: Answer and Percent of tablet users. The data is: Always, 30.9%; Often, 36.8%; Rarely, 19.1%; Never, 13.2%. A) 0.31 B) 0.36 C) 0.44 D) 0.69 Answer: B Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_202
+Question: The scatterplot above shows the relationship between the number of male and female students in a certain country who were enrolled in college from 2000 to 2010. A line of best fit for the data is also shown. Which of the following is the best interpretation of the slope of the line of best fit? Visual: A scatterplot with "Number of male students (millions)" on the x-axis and "Number of female students (millions)" on the y-axis. The data points show a positive correlation. A line of best fit is drawn. A) For every 1 million male students enrolled in college, there were approximately 1.04 million female students enrolled. B) For every 1 million female students enrolled in college, there were approximately 1.04 million male students enrolled. C) The number of female students enrolled in college was approximately 1.04 million more than the number of male students enrolled. D) The number of male students enrolled in college was approximately 1.04 million more than the number of female students enrolled. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_203
+Question: In the xy-plane, the graph of y=3(x−5)2+4 is a parabola. Which of the following is the vertex of the parabola? Visual: None A) (3,4) B) (5,4) C) (-5,4) D) (-3,4) Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_204
+Question: For which of the following values of x is the function f(x)=3x−9 +5 NOT defined? Visual: None A) 3 B) 4 C) 5 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_205
+Question: A hospital stores one type of medicine in 2-decagram containers. Based on the information given in the box above, how many 1-milligram doses are there in one 2-decagram container? Visual: A box with the text "1 decagram = 10 grams, 1,000 milligrams = 1 gram". A) 200 B) 2,000 C) 20,000 D) 200,000 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_206
+Question: The number of rooftops with solar panel installations in 5 cities is shown in the graph above. If the total number of installations is 27,500, what is an appropriate label for the vertical axis of the graph? Visual: A bar chart showing the number of installations in 5 cities (A, B, C, D, E). The y-axis is unlabeled. The bar for City A goes up to 9, B to 5, C to 6, D to 4, and E to 3.5. A) Number of installations (in tens) B) Number of installations (in hundreds) C) Number of installations (in thousands) D) Number of installations (in tens of thousands) Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_207
+Question: For what value of n is ∣n−1∣+1 equal to 0? Visual: None A) 0 B) 1 C) 2 D) There is no such value of n. Answer: D Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_208
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_209
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_210
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_211
+Question: In the xy-plane, the parabola with equation y=(x−11)2 intersects the line with equation y=25 at two points, A and B. What is the length of the segment AB? Visual: None A) 10 B) 12 C) 14 D) 16 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_212
+Question: In the xy-plane, the line with equation y=3x+2 is parallel to the line with equation y=ax+b. What is the value of a? Visual: None A) -3 B) -2 C) 2 D) 3 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_213
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_214
+Question: If f(x)=−2x+5, what is f(−3x) equal to? Visual: None A) 6x+5 B) 6x−5 C) −6x+5 D) −6x−5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_215
+Question: A system of three equations is shown above. What is the value of x+y+z? Visual: Three equations are shown: x+y=8, y+z=12, x+z=10. A) 10 B) 15 C) 20 D) 30 Answer: B Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_216
+Question: The expression 2x+11 is equivalent to which of the following? Visual: None A) 4x2−12x−1 B) 4x2+12x+1 C) 4x2+12x−1 D) 4x2−12x+1 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_217
+Question: The graph of a line in the xy-plane passes through the origin and has a slope of 1/7. Which of the following points lies on the line? Visual: None A) (0,7) B) (1,7) C) (7,1) D) (14,2) Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_218
+Question: If x>3, which of the following is equivalent to x+21 +x+31 1 ? Visual: None A) x2+5x+62x+5 B) 2x+5x2+5x+6 C) 2x+5 D) x2+5x+6 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_219
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_220
+Question: If f(x)=x−1x2−6x+3 , what is f(−1)? Visual: None A) -5 B) -2 C) 2 D) 5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_221
+Question: A circle in the xy-plane has center (5,-12) and radius 8. Which of the following is an equation of the circle? Visual: None A) (x−5)2+(y+12)2=64 B) (x+5)2+(y−12)2=64 C) (x−5)2+(y+12)2=8 D) (x+5)2+(y−12)2=8 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_222
+Question: In the figure above, triangle ABC is similar to triangle DEF. What is the value of cos(E)? Visual: A right triangle ABC with right angle at B. AB=12, BC=5, AC=13. A) 12/13 B) 5/13 C) 12/5 D) 5/12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_223
+Question: A dairy farmer uses a storage silo that is in the shape of the right circular cylinder above. If the volume of the silo is 72pi cubic yards, what is the diameter of the base of the cylinder, in yards? Visual: A right circular cylinder with a height of 8 yards. A) 3 B) 6 C) 9 D) 12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_224
+Question: For what value of x is the function h(x) = 1? Visual: A graph of a function h(x) is shown. It passes through the points (-1, -2), (0, -1), (1, 0), (2, 1), (3, 2). A) -1 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_225
+Question: The formula for the monthly payment, m, on a loan is given by the formula m=(1+r)n−1Pr(1+r)n , where P is the principal, r is the monthly interest rate, and n is the number of months. Which of the following gives P in terms of m, r, and n? Visual: None A) P=r(1+r)nm(1+r)n−1 B) P=(1+r)n−1m(1+r)n C) P=r(1+r)nm(1+r)n−m D) P=(1+r)n−1mr(1+r)n Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_226
+Question: If ba =2, what is the value of a4b ? Visual: None A) 0 B) 1 C) 2 D) 4 Answer: C Category: math Domain: Algebra Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_227
+Question: The scatterplot above shows the relationship between the number of hours that a group of students spent studying for a test and their scores on the test. Which of the following is the best interpretation of the y-intercept of the line of best fit? Visual: A scatterplot with "Hours of Study" on the x-axis and "Test Score" on the y-axis. A line of best fit is drawn through the data points. The y-intercept is at approximately 60. A) The predicted score of a student who studied for 0 hours. B) The predicted score of a student who studied for 10 hours. C) The predicted increase in score for each additional hour of study. D) The predicted number of hours of study for a student who scored 0. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_228
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_229
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_230
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_231
+Question: In the xy-plane, the parabola with equation y=(x−11)2 intersects the line with equation y=25 at two points, A and B. What is the length of the segment AB? Visual: None A) 10 B) 12 C) 14 D) 16 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_232
+Question: In the xy-plane, the line with equation y=3x+2 is parallel to the line with equation y=ax+b. What is the value of a? Visual: None A) -3 B) -2 C) 2 D) 3 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_233
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_234
+Question: If f(x)=−2x+5, what is f(−3x) equal to? Visual: None A) 6x+5 B) 6x−5 C) −6x+5 D) −6x−5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_235
+Question: A system of three equations is shown above. What is the value of x+y+z? Visual: Three equations are shown: x+y=8, y+z=12, x+z=10. A) 10 B) 15 C) 20 D) 30 Answer: B Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_236
+Question: The expression 2x+11 is equivalent to which of the following? Visual: None A) 4x2−12x−1 B) 4x2+12x+1 C) 4x2+12x−1 D) 4x2−12x+1 Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_237
+Question: The graph of a line in the xy-plane passes through the origin and has a slope of 1/7. Which of the following points lies on the line? Visual: None A) (0,7) B) (1,7) C) (7,1) D) (14,2) Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_238
+Question: If x>3, which of the following is equivalent to x+21 +x+31 1 ? Visual: None A) x2+5x+62x+5 B) 2x+5x2+5x+6 C) 2x+5 D) x2+5x+6 Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_239
+Question: If 3x−y=12, what is the value of 2y8x ? Visual: None A) 212 B) 44 C) 82 D) The value cannot be determined from the information given. Answer: A Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_240
+Question: If f(x)=x−1x2−6x+3 , what is f(−1)? Visual: None A) -5 B) -2 C) 2 D) 5 Answer: A Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_241
+Question: A circle in the xy-plane has center (5,-12) and radius 8. Which of the following is an equation of the circle? Visual: None A) (x−5)2+(y+12)2=64 B) (x+5)2+(y−12)2=64 C) (x−5)2+(y+12)2=8 D) (x+5)2+(y−12)2=8 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_242
+Question: In the figure above, triangle ABC is similar to triangle DEF. What is the value of cos(E)? Visual: A right triangle ABC with right angle at B. AB=12, BC=5, AC=13. A) 12/13 B) 5/13 C) 12/5 D) 5/12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_243
+Question: A dairy farmer uses a storage silo that is in the shape of the right circular cylinder above. If the volume of the silo is 72pi cubic yards, what is the diameter of the base of the cylinder, in yards? Visual: A right circular cylinder with a height of 8 yards. A) 3 B) 6 C) 9 D) 12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_244
+Question: For what value of x is the function h(x) = 1? Visual: A graph of a function h(x) is shown. It passes through the points (-1, -2), (0, -1), (1, 0), (2, 1), (3, 2). A) -1 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_245
+Question: The formula for the monthly payment, m, on a loan is given by the formula m=(1+r)n−1Pr(1+r)n , where P is the principal, r is the monthly interest rate, and n is the number of months. Which of the following gives P in terms of m, r, and n? Visual: None A) P=r(1+r)nm(1+r)n−1 B) P=(1+r)n−1m(1+r)n C) P=r(1+r)nm(1+r)n−m D) P=(1+r)n−1mr(1+r)n Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_246
+Question: If ba =2, what is the value of a4b ? Visual: None A) 0 B) 1 C) 2 D) 4 Answer: C Category: math Domain: Algebra Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_247
+Question: The scatterplot above shows the relationship between the number of hours that a group of students spent studying for a test and their scores on the test. Which of the following is the best interpretation of the y-intercept of the line of best fit? Visual: A scatterplot with "Hours of Study" on the x-axis and "Test Score" on the y-axis. A line of best fit is drawn through the data points. The y-intercept is at approximately 60. A) The predicted score of a student who studied for 0 hours. B) The predicted score of a student who studied for 10 hours. C) The predicted increase in score for each additional hour of study. D) The predicted number of hours of study for a student who scored 0. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_248
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_249
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_250
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+QUESTION_251
+Question: In the xy-plane, the graph of the equation y=x2−8x+12 is a parabola. What is the distance between the x-intercepts of the parabola? Visual: None A) 2 B) 4 C) 6 D) 8 Answer: B Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_252
+Question: The equation x2+y2−6x+8y=144 defines a circle in the xy-plane. What is the radius of the circle? Visual: None A) 5 B) 12 C) 13 D) 144 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_253
+Question: In the xy-plane, the graph of y=3x2−14x intersects the graph of y=x at the points (0,0) and (a,a). What is the value of a? Visual: None A) 3 B) 4 C) 5 D) 6 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_254
+Question: The number of radians in a 720-degree angle can be written as kπ, where k is a constant. What is the value of k? Visual: None A) 2 B) 4 C) 6 D) 8 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_255
+Question: A right triangle has sides of length x, y, and z, where z is the hypotenuse. If the perimeter of the triangle is 30 and the area is 30, what is the value of z? Visual: None A) 5 B) 12 C) 13 D) 15 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_256
+Question: In the xy-plane, the graph of the function f(x)=x2+5x+4 has two x-intercepts. What is the distance between the x-intercepts? Visual: None A) 1 B) 2 C) 3 D) 4 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_257
+Question: A right circular cone has a height of 12 and a radius of 5. What is the volume of the cone? Visual: None A) 25π B) 100π C) 300π D) 400π Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_258
+Question: In the xy-plane, the point (3,6) lies on the graph of the function f(x)=3x2−bx+12. What is the value of b? Visual: None A) -3 B) 3 C) 9 D) 15 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_259
+Question: The equation of a circle in the xy-plane is shown above. What is the radius of the circle? x2+y2−6x+8y=144 Visual: None A) 5 B) 12 C) 13 D) 144 Answer: C Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_260
+Question: The expression x+35x−2 is equivalent to which of the following? Visual: None A) 5−32 B) 5−x+317 C) 5−x+32 D) 1+3/x5−2/x Answer: B Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_261
+Question: The table above shows the distribution of age and gender for 25 people who entered a contest. If the contest winner is selected at random, what is the probability that the winner will be either a female under age 40 or a male age 40 or older? Visual: A table with columns for Male and Female, and rows for Under age 40 and Age 40 or older. The data is: Male Under 40: 8, Female Under 40: 8, Male 40 or older: 2, Female 40 or older: 7. A) 4/25 B) 10/25 C) 14/25 D) 16/25 Answer: B Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_262
+Question: The graph of a line in the xy-plane has slope 2 and contains the point (1, 8). The graph of a second line passes through the points (1, 2) and (2, 1). If the two lines intersect at the point (a, b), what is the value of a+b? Visual: None A) 4 B) 1 C) -1 D) -4 Answer: D Category: math Domain: Algebra Skill: Systems of two linear equations in two variables Difficulty: hard
+QUESTION_263
+Question: Which of the following equations has a graph in the xy-plane for which y is always greater than or equal to -1? Visual: None A) y=∣x∣−2 B) y=x2−2 C) y=(x−2)2 D) y=x3−2 Answer: C Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_264
+Question: Which of the following complex numbers is equivalent to 8+2i3−5i ? (Note: i=−1 ) Visual: None A) 347 −3423i B) 347 +3423i C) 6814 −6846i D) 6814 +6846i Answer: A Category: math Domain: Additional Topics in Math Skill: Complex numbers Difficulty: hard
+QUESTION_265
+Question: A website-hosting service charges businesses a onetime setup fee of $350 plus d dollars for each month. If a business owner paid $1,010 for the first 12 months, including the setup fee, what is the value of d? Visual: None A) 25 B) 35 C) 45 D) 55 Answer: D Category: math Domain: Algebra Skill: Linear equations in one variable Difficulty: hard
+QUESTION_266
+Question: 2x(3x+5)+3(3x+5)=ax2+bx+c. In the equation above, a, b, and c are constants. If the equation is true for all values of x, what is the value of b? Visual: None A) 8 B) 16 C) 19 D) 31 Answer: C Category: math Domain: Advanced Math Skill: Equivalent expressions Difficulty: hard
+QUESTION_267
+Question: A circle in the xy-plane has center (5, -12) and radius 8. Which of the following is an equation of the circle? Visual: None A) (x−5)2+(y+12)2=64 B) (x+5)2+(y−12)2=64 C) (x−5)2+(y+12)2=8 D) (x+5)2+(y−12)2=8 Answer: A Category: math Domain: Geometry and Trigonometry Skill: Circles Difficulty: hard
+QUESTION_268
+Question: In the figure above, triangle ABC is similar to triangle DEF. What is the value of cos(E)? Visual: A right triangle ABC with right angle at B. AB=12, BC=5, AC=13. A) 12/13 B) 5/13 C) 12/5 D) 5/12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Right triangles and trigonometry Difficulty: hard
+QUESTION_269
+Question: A dairy farmer uses a storage silo that is in the shape of the right circular cylinder above. If the volume of the silo is 72pi cubic yards, what is the diameter of the base of the cylinder, in yards? Visual: A right circular cylinder with a height of 8 yards. A) 3 B) 6 C) 9 D) 12 Answer: B Category: math Domain: Geometry and Trigonometry Skill: Area and volume Difficulty: hard
+QUESTION_270
+Question: For what value of x is the function h(x) = 1? Visual: A graph of a function h(x) is shown. It passes through the points (-1, -2), (0, -1), (1, 0), (2, 1), (3, 2). A) -1 B) 0 C) 1 D) 2 Answer: D Category: math Domain: Advanced Math Skill: Nonlinear functions Difficulty: hard
+QUESTION_271
+Question: The formula for the monthly payment, m, on a loan is given by the formula m=(1+r)n−1Pr(1+r)n , where P is the principal, r is the monthly interest rate, and n is the number of months. Which of the following gives P in terms of m, r, and n? Visual: None A) P=r(1+r)nm(1+r)n−1 B) P=(1+r)n−1m(1+r)n C) P=r(1+r)nm(1+r)n−m D) P=(1+r)n−1mr(1+r)n Answer: A Category: math Domain: Advanced Math Skill: Nonlinear equations in one variable and systems of equations in two variables Difficulty: hard
+QUESTION_272
+Question: If ba =2, what is the value of a4b ? Visual: None A) 0 B) 1 C) 2 D) 4 Answer: C Category: math Domain: Algebra Skill: Ratios, rates, proportional relationships, and units Difficulty: hard
+QUESTION_273
+Question: The scatterplot above shows the relationship between the number of hours that a group of students spent studying for a test and their scores on the test. Which of the following is the best interpretation of the y-intercept of the line of best fit? Visual: A scatterplot with "Hours of Study" on the x-axis and "Test Score" on the y-axis. A line of best fit is drawn through the data points. The y-intercept is at approximately 60. A) The predicted score of a student who studied for 0 hours. B) The predicted score of a student who studied for 10 hours. C) The predicted increase in score for each additional hour of study. D) The predicted number of hours of study for a student who scored 0. Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Two-variable data: Models and scatterplots Difficulty: hard
+QUESTION_274
+Question: A survey was conducted among a random sample of 250 students at a high school. The survey found that 175 students have a driver's license. If the high school has 1,200 students, which of the following is the most reasonable estimate for the number of students at the high school who have a driver's license? Visual: None A) 70 B) 175 C) 840 D) 1025 Answer: C Category: math Domain: Problem-Solving and Data Analysis Skill: Inference from sample statistics and margin of error Difficulty: hard
+QUESTION_275
+Question: The table above shows the number of people in a survey who own a car and the number of people who own a bicycle. Based on the table, what is the probability that a person chosen at random owns a car, given that the person owns a bicycle? Visual: A Venn diagram-style table. 12 people own a car only. 8 people own a bicycle only. 15 people own both. 5 people own neither. A) 15/23 B) 15/27 C) 23/40 D) 27/40 Answer: A Category: math Domain: Problem-Solving and Data Analysis Skill: Probability and conditional probability Difficulty: hard
+QUESTION_276
+Question: The graph of a line in the xy-plane passes through the point (1,4) and crosses the x-axis at the point (2,0). The line crosses the y-axis at the point (0,b). What is the value of b? Visual: None A) -4 B) 0 C) 4 D) 8 Answer: D Category: math Domain: Algebra Skill: Linear equations in two variables Difficulty: hard
+
