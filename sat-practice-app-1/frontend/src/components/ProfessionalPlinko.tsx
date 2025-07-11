@@ -10,6 +10,7 @@ import {
   sanitizeMoney,
   isValidMoney 
 } from '../utils/money';
+import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
 
 interface ProfessionalPlinkoProps {
   onClose: () => void;
@@ -125,8 +126,8 @@ const ProfessionalPlinko: React.FC<ProfessionalPlinkoProps> = ({ onClose, balanc
   const BOUNCE_DAMPING = 0.8;
   const FRICTION = 0.99;
 
-  const [gameState, setGameState] = useState<GameState>({
-    balance: roundMoney(balance ?? 0),
+  const [gameState, setGameState] = useState<GameState>(() => ({
+    balance: typeof balance === 'number' ? balance : getSavedBalance() || 1000.00,
     betAmount: 1.00,
     riskLevel: 'medium',
     rows: 12,
@@ -136,7 +137,12 @@ const ProfessionalPlinko: React.FC<ProfessionalPlinkoProps> = ({ onClose, balanc
     lastPayout: 0,
     totalWinnings: 0,
     recentResults: []
-  });
+  }));
+
+  // Persist balance to localStorage whenever it changes
+  useEffect(() => {
+    saveBalance(gameState.balance);
+  }, [gameState.balance]);
 
   // Generate pegs in pyramid formation
   const generatePegs = useCallback((rows: number): Peg[] => {

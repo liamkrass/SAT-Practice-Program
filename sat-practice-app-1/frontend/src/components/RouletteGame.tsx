@@ -10,6 +10,7 @@ import {
   sanitizeMoney,
   isValidMoney 
 } from '../utils/money';
+import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
 
 interface RouletteGameProps {
   onClose: () => void;
@@ -186,6 +187,10 @@ const RouletteGame: React.FC<RouletteGameProps> = ({ onClose, balance, onEarn })
 
     return numbers;
   };
+
+  useEffect(() => {
+    saveBalance(balance);
+  }, [balance]);
 
   return (
     <div className="roulette-game">

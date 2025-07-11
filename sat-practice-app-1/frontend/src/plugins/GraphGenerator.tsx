@@ -46,7 +46,7 @@ const GraphGenerator: React.FC<GraphGeneratorProps> = ({ data }) => {
                                     font: {
                                         family: "'Inter', sans-serif",
                                         size: 14,
-                                        weight: '500'
+                                        weight: 500
                                     },
                                     color: textColors.primary
                                 }
@@ -58,7 +58,7 @@ const GraphGenerator: React.FC<GraphGeneratorProps> = ({ data }) => {
                                     font: {
                                         family: "'Inter', sans-serif",
                                         size: 12,
-                                        weight: '400'
+                                        weight: 400
                                     },
                                     color: textColors.secondary
                                 }
@@ -68,7 +68,7 @@ const GraphGenerator: React.FC<GraphGeneratorProps> = ({ data }) => {
                                     font: {
                                         family: "'Inter', sans-serif",
                                         size: 12,
-                                        weight: '400'
+                                        weight: 400
                                     },
                                     color: textColors.secondary
                                 }

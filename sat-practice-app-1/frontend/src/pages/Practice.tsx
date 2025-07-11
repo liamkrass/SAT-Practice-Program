@@ -7,6 +7,7 @@ import QuestionStats from '../components/QuestionStats';
 import { satQuestions, getQuestionsByCategory, getQuestionsByDomain } from '../data/satQuestions';
 import { typography, applyTypography, textColors } from '../styles/typography';
 import { getAnsweredQuestions, saveAnsweredQuestion, clearProgress, cleanupDuplicates, debugProgress, verifyProgressIntegrity } from '../utils/progressStorage';
+import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
 
 // Helper to normalize answers for comparison (top-level, so it's reused everywhere)
 const normalizeAnswer = (answer: string) => {
@@ -43,7 +44,7 @@ const Practice: React.FC = () => {
   const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
   const [showQuestionFilter, setShowQuestionFilter] = useState(false);
   const [showQuestionStats, setShowQuestionStats] = useState(false);
-  const [balance, setBalance] = useState(0); // Add balance tracking
+  const [balance, setBalance] = useState(() => getSavedBalance());
   const [resetFlag, setResetFlag] = useState(false); // Used to force re-filter after reset
 
   // Clean up any duplicates when component loads
@@ -144,6 +145,11 @@ const Practice: React.FC = () => {
     setBalance(prev => prev + amount);
   };
 
+  // Save balance to localStorage whenever it changes
+  useEffect(() => {
+    saveBalance(balance);
+  }, [balance]);
+
   // Calculate scores and breakdowns
   const getScoreSummary = () => {
     let overall = 0, math = 0, verbal = 0;
@@ -165,6 +171,8 @@ const Practice: React.FC = () => {
     setShowResults(false);
     setBalance(0); // Reset balance when starting new practice
     clearProgress(); // Clear localStorage progress
+    // Also clear balance from localStorage
+    saveBalance(0);
     setResetFlag(f => !f); // Force re-render to update filtered questions
   };
 

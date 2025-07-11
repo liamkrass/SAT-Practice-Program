@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { typography, applyTypography, textColors } from '../styles/typography';
 import { 
   formatMoney, 
@@ -10,6 +10,7 @@ import {
   sanitizeMoney,
   isValidMoney 
 } from '../utils/money';
+import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
 
 interface BlackjackGameProps {
   onClose: () => void;
@@ -54,6 +55,10 @@ const BlackjackGame: React.FC<BlackjackGameProps> = ({ onClose, balance, onEarn 
   const [insuranceOffered, setInsuranceOffered] = useState(false);
   const [insuranceBet, setInsuranceBet] = useState(0);
   const [insuranceResolved, setInsuranceResolved] = useState(false);
+
+  useEffect(() => {
+    saveBalance(balance);
+  }, [balance]);
 
   const createDeck = useCallback((): Card[] => {
     const suits: Card['suit'][] = ['♠', '♥', '♦', '♣'];

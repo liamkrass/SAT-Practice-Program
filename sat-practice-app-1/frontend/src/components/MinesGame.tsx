@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { typography, applyTypography, textColors } from '../styles/typography';
 import { 
   formatMoney, 
@@ -10,6 +10,7 @@ import {
   sanitizeMoney,
   isValidMoney 
 } from '../utils/money';
+import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
 
 interface MinesGameProps {
   onClose: () => void;
@@ -45,6 +46,10 @@ const MinesGame: React.FC<MinesGameProps> = ({ onClose, balance, onEarn }) => {
     betInputActive: false,
     betInputValue: 1,
   });
+
+  useEffect(() => {
+    saveBalance(balance);
+  }, [balance]);
 
   const calculateMultiplier = useCallback((revealedCount: number, mineCount: number) => {
     if (revealedCount === 0) return 1.0;
