@@ -1030,6 +1030,12 @@ button {
 
 .outside-bet:hover:not(:disabled) {
   border-color: #5eead4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.outside-bet:hover:not(:disabled) {
+  border-color: #5eead4;
   transform: translateY(-2px);
 }
 
@@ -1192,4 +1198,33 @@ button {
   60% {
     transform: translateY(-5px);
   }
+}
+
+@keyframes welcomeSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes welcomeBackdropFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Welcome popup specific animations */
+.welcome-popup-backdrop {
+  animation: welcomeBackdropFade 0.3s ease-out;
+}
+
+.welcome-popup-content {
+  animation: welcomeSlideIn 0.4s ease-out;
 }
