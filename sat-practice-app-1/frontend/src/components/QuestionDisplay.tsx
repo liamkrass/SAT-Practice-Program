@@ -211,10 +211,11 @@ const QuestionDisplay: React.FC<QuestionDisplayProps & {
                 boxShadow: '0 6px 24px rgba(60,72,100,0.12)',
                 animation: 'fadeInScale 0.3s ease-out'
             }}>
-                {/* Jump to Question */}
-                <button
-                    onClick={handleShowQuestionList}
-                    title="Jump to Question"
+                {/* Filter Button */}
+                {onShowQuestionList && (
+                  <button
+                    onClick={() => onShowQuestionList()}
+                    title="Filter Questions"
                     style={{ 
                         background: 'none', 
                         border: 'none', 
@@ -230,25 +231,23 @@ const QuestionDisplay: React.FC<QuestionDisplayProps & {
                         outline: 'none'
                     }}
                     onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'rgba(99, 102, 241, 0.1)';
+                        e.currentTarget.style.background = 'rgba(59, 130, 246, 0.15)';
                         e.currentTarget.style.transform = 'scale(1.05)';
                     }}
                     onMouseLeave={(e) => {
                         e.currentTarget.style.background = 'none';
                         e.currentTarget.style.transform = 'scale(1)';
                     }}
-                    aria-label="Jump to Question"
-                >
+                    aria-label="Filter Questions"
+                  >
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* Modern Navigation Grid */}
-                        <rect x="3" y="3" width="18" height="18" rx="4" stroke="#6366f1" strokeWidth="2" fill="none"/>
-                        <rect x="6" y="6" width="4" height="4" rx="1" fill="#6366f1"/>
-                        <rect x="14" y="6" width="4" height="4" rx="1" fill="#6366f1"/>
-                        <rect x="6" y="14" width="4" height="4" rx="1" fill="#6366f1"/>
-                        <rect x="14" y="14" width="4" height="4" rx="1" fill="#6366f1"/>
-                        <circle cx="12" cy="12" r="1.5" fill="#6366f1"/>
+                      {/* Simple, clean filter icon */}
+                      <path d="M3 6H21" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M7 12H17" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M11 18H13" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
-                </button>
+                  </button>
+                )}
 
                 {/* Progress Indicator replaced with Performance Dropdown Button */}
                 <PerformanceDropdownButton 
@@ -349,9 +348,9 @@ const QuestionDisplay: React.FC<QuestionDisplayProps & {
                 {/* Casino */}
                 <button
                     onClick={() => setShowPlinko(true)}
-                    title="Open Casino"
+                    title="Practice Rewards"
                     style={{ 
-                        background: showPlinko ? 'rgba(139, 92, 246, 0.15)' : 'none', 
+                        background: showPlinko ? 'rgba(16, 185, 129, 0.15)' : 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
                         padding: '10px', 
@@ -365,29 +364,18 @@ const QuestionDisplay: React.FC<QuestionDisplayProps & {
                         outline: 'none'
                     }}
                     onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'rgba(139, 92, 246, 0.15)';
+                        e.currentTarget.style.background = 'rgba(16, 185, 129, 0.15)';
                         e.currentTarget.style.transform = 'scale(1.05)';
                     }}
                     onMouseLeave={(e) => {
-                        e.currentTarget.style.background = showPlinko ? 'rgba(139, 92, 246, 0.15)' : 'none';
+                        e.currentTarget.style.background = showPlinko ? 'rgba(16, 185, 129, 0.15)' : 'none';
                         e.currentTarget.style.transform = 'scale(1)';
                     }}
-                    aria-label="Open Casino"
+                    aria-label="Open Rewards"
                 >
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* Modern Casino Chip */}
-                        <circle cx="12" cy="12" r="10" fill="#8b5cf6" stroke="#7c3aed" strokeWidth="2"/>
-                        <circle cx="12" cy="12" r="6" fill="none" stroke="white" strokeWidth="2"/>
-                        <circle cx="12" cy="12" r="2" fill="white"/>
-                        
-                        {/* Chip edge details */}
-                        <circle cx="6" cy="12" r="1" fill="white" opacity="0.8"/>
-                        <circle cx="18" cy="12" r="1" fill="white" opacity="0.8"/>
-                        <circle cx="12" cy="6" r="1" fill="white" opacity="0.8"/>
-                        <circle cx="12" cy="18" r="1" fill="white" opacity="0.8"/>
-                        
-                        {/* Dollar symbol */}
-                        <text x="12" y="16" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">$</text>
+                        <circle cx="12" cy="12" r="10" fill="#10b981" stroke="#059669" strokeWidth="2"/>
+                        <text x="12" y="17" fontSize="12" fill="#fff" textAnchor="middle" fontWeight="bold">$</text>
                     </svg>
                 </button>
             </div>

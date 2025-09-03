@@ -1,0 +1,16 @@
+{
+  "name": "SAT Practice App",
+  "short_name": "SAT Practice",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

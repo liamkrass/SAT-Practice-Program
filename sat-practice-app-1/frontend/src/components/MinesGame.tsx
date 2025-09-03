@@ -11,6 +11,9 @@ import {
   isValidMoney 
 } from '../utils/money';
 import { getSavedBalance, saveBalance } from '../utils/balanceStorage';
+import { ReactComponent as MineTileGem } from '../icons/MineTileGem.svg';
+import { ReactComponent as MineTileBomb } from '../icons/MineTileBomb.svg';
+import { ReactComponent as MineHeaderIcon } from '../icons/MineHeader.svg';
 
 interface MinesGameProps {
   onClose: () => void;
@@ -186,21 +189,10 @@ const MinesGame: React.FC<MinesGameProps> = ({ onClose, balance, onEarn }) => {
         disabled={!isClickable}
       >
         {tileState === 'revealed' && (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="#10b981" stroke="#059669" strokeWidth="1"/>
-            <circle cx="12" cy="12" r="3" fill="#047857" opacity="0.6"/>
-          </svg>
+          <MineTileGem width={20} height={20} />
         )}
         {tileState === 'mine' && (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="6" fill="#dc2626" stroke="#991b1b" strokeWidth="1"/>
-            <circle cx="12" cy="12" r="3" fill="#7c2d12"/>
-            <path d="M6 6L18 18M18 6L6 18" stroke="#dc2626" strokeWidth="1" opacity="0.8"/>
-            <circle cx="8" cy="8" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="16" cy="8" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="8" cy="16" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="16" cy="16" r="1" fill="#fbbf24" opacity="0.8"/>
-          </svg>
+          <MineTileBomb width={20} height={20} />
         )}
       </button>
     );
@@ -211,17 +203,7 @@ const MinesGame: React.FC<MinesGameProps> = ({ onClose, balance, onEarn }) => {
       {/* Header */}
       <div className="mines-header">
         <h1 style={{ ...applyTypography(typography.heading.lg), color: textColors.primary, display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Modern Mine Icon */}
-            <rect x="2" y="2" width="20" height="20" rx="3" fill="#1e293b" stroke="#5eead4" strokeWidth="1.5"/>
-            <circle cx="12" cy="12" r="4" fill="#dc2626" stroke="#991b1b" strokeWidth="1"/>
-            <circle cx="12" cy="12" r="2" fill="#7c2d12"/>
-            <path d="M8 8L16 16M16 8L8 16" stroke="#dc2626" strokeWidth="1" opacity="0.6"/>
-            <circle cx="6" cy="6" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="18" cy="6" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="6" cy="18" r="1" fill="#fbbf24" opacity="0.8"/>
-            <circle cx="18" cy="18" r="1" fill="#fbbf24" opacity="0.8"/>
-          </svg>
+          <MineHeaderIcon width={32} height={32} />
           Mines
         </h1>
         <button onClick={onClose} className="mines-close-btn">←</button>
