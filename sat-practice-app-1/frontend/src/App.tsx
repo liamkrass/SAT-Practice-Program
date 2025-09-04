@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Results from './pages/Results';
 import Practice from './pages/Practice';
 import DebugPage from './pages/DebugPage';
-import QuestionDebug from './components/QuestionDebug';
 import WelcomePopup, { shouldShowWelcomePopup } from './components/WelcomePopup';
 import './App.css';
 
@@ -37,7 +36,6 @@ const App: React.FC = () => {
           <Route path="/results" component={Results} />
           <Route path="/practice" component={Practice} />
           <Route path="/debug" component={DebugPage} />
-          <Route path="/question-debug" component={QuestionDebug} />
         </Switch>
         
         {/* Welcome popup for new users */}
